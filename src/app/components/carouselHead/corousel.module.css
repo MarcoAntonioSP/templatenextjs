@@ -1,0 +1,19 @@
+.aewaew {
+    position: relative;
+    top: -25px;
+    left: -20%;
+    margin-left: 50px;
+    color: white;
+    width: 70%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5); /* Mudança para um fundo mais escuro */
+    border-radius: 15px;
+    text-shadow: 2px 3px 8px black;
+}
+
+@media (max-width: 600px) {
+    .aewaew {
+        width: 130%;
+        margin-left: -1.5%;
+    }
+}

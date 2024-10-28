@@ -1,42 +1,64 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/* Reset básico */
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilizando links */
 a {
-  color: inherit;
-  text-decoration: none;
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a cor do texto pai */
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+a:hover {
+    text-decoration: underline; /* Substitui o sublinhado no hover */
+}
+
+/* Estilizando cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Remove margem padrão */
+    font-weight: normal; /* Define peso normal para cabeçalhos */
+}
+
+/* Listas */
+ul, ol {
+    list-style: none; /* Remove marcadores de listas */
+}
+
+/* Botões */
+button {
+    border: none; /* Remove bordas */
+    background: none; /* Remove fundo */
+    cursor: pointer; /* Adiciona cursor de ponteiro */
+}
+
+/* Estilizando imagens */
+img {
+    max-width: 100%; /* Garante que as imagens sejam responsivas */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilizando tabelas */
+table {
+    border-collapse: collapse; /* Remove espaços entre as células */
+    width: 100%; /* Tabelas ocupam toda a largura */
+}
+
+th, td {
+    padding: 8px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento padrão */
+}
+
+/* Estilizando formulários */
+input, textarea, select, button {
+    font-family: inherit; /* Herda a fonte do body */
+    font-size: inherit; /* Herda o tamanho da fonte do body */
+}
+
+/* Ajustando elementos de formatação */
+hr {
+    border: none; /* Remove borda padrão */
+    border-top: 1px solid #ccc; /* Adiciona uma linha superior */
+    margin: 20px 0; /* Margens acima e abaixo */
 }

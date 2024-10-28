@@ -1,0 +1,70 @@
+.headernav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: white;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffffb1; /* Fundo branco com 50% de transparência */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.menu {
+    margin-right: 30%;
+    display: flex;
+}
+
+.transparent-bg {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com 50% de transparência */
+}
+
+/* Ajustes para garantir responsividade */
+.navbar {
+    margin-top: 50px; /* Adiciona 50 pixels de margem superior */
+    flex-wrap: nowrap; /* Impede que os itens do menu quebrem para a linha de baixo */
+    justify-content: flex-end; /* Alinha os itens para a direita */
+}
+
+.navbar-toggler {
+    border: none; /* Remove a borda do botão toggle */
+}
+
+.navbar-collapse {
+    transition: max-height 0.3s ease; /* Suaviza a transição ao abrir/fechar o menu */
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px; /* Espaçamento adequado para os links */
+}
+
+/* Media Queries para melhor responsividade */
+@media (max-width: 768px) {
+    .headernav {
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    }
+    .menu {
+        height: 140px;
+        margin-top: 30px;
+    }
+    .sticky {
+        margin-top: 20px;
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Organiza os links em coluna em telas pequenas */
+    }
+
+    .nav-link {
+        text-align: center; /* Centraliza os links em telas pequenas */
+    }
+}
