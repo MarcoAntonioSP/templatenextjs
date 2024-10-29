@@ -6,12 +6,15 @@ import NavHead from "./components/navHead/NavHead";
 import Section1 from "./components/section1/Section1";
 import Apresentation from "./components/structure/Apresentation";
 import ServiceCard from "./components/servicecard/ServiceCard";
+import Hero from "./components/hero/Hero";
+
 export default function Home() {
   return (
     <div className={styles.pagestyles}>
       <NavHead />
       <CarouselHead />
       <Apresentation />
+      <Hero />
       <ServiceCard />
       <Section1 />
       <NavHeader />
