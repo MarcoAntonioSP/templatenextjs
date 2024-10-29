@@ -1,4 +1,3 @@
-// components/CarouselHead.js
 "use client";
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
@@ -10,7 +9,7 @@ export default function CarouselHead() {
 
     useEffect(() => {
         let bootstrap;
-        
+
         // Carrega o JavaScript do Bootstrap dinamicamente
         import('bootstrap/dist/js/bootstrap.bundle.min.js').then((module) => {
             bootstrap = module.default;
@@ -45,7 +44,9 @@ export default function CarouselHead() {
                 {/* Slides */}
                 <div className="carousel-inner" style={{ height: '700px' }}>
                     <div className="carousel-item active" style={{ height: '700px', position: 'relative' }}>
-                        <Image src="/banner1.jpg" className="d-block w-100" alt="First slide" fill style={{ objectFit: 'cover' }} />
+                        <div style={{ position: 'relative', height: '100%', width: '100%' }}>
+                            <Image src="/banner1.jpg" className="d-block w-100" alt="First slide" fill style={{ objectFit: 'cover' }} />
+                        </div>
                         <div className="carousel-caption d-md-block">
                             <div className={`container mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                                 <p className="text-muted">Transforme seu sonho digital</p>
@@ -70,7 +71,9 @@ export default function CarouselHead() {
                         </div>
                     </div>
                     <div className="carousel-item" style={{ height: '700px', position: 'relative' }}>
-                        <Image src="/banner2.jpg" className="d-block w-100" alt="Second slide" fill style={{ objectFit: 'cover' }} />
+                        <div style={{ position: 'relative', height: '100%', width: '100%' }}>
+                            <Image src="/banner2.jpg" className="d-block w-100" alt="Second slide" fill style={{ objectFit: 'cover' }} />
+                        </div>
                         <div className="carousel-caption d-md-block">
                             <div className={`container mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                                 <p className="text-muted">Inovação e Estratégia</p>
@@ -95,7 +98,9 @@ export default function CarouselHead() {
                         </div>
                     </div>
                     <div className="carousel-item" style={{ height: '700px', position: 'relative' }}>
-                        <Image src="/banner3.jpg" className="d-block w-100" alt="Third slide" fill style={{ objectFit: 'cover' }} />
+                        <div style={{ position: 'relative', height: '100%', width: '100%' }}>
+                            <Image src="/banner3.jpg" className="d-block w-100" alt="Third slide" fill style={{ objectFit: 'cover' }} />
+                        </div>
                         <div className="carousel-caption d-md-block">
                             <div className={`container mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                                 <p className="text-muted">Alcance o topo do mercado</p>
