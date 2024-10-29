@@ -1,25 +1,30 @@
+// components/CarouselHead.js
 "use client";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './corousel.module.css';
-import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 export default function CarouselHead() {
     const carouselRef = useRef(null);
 
     useEffect(() => {
-        if (carouselRef.current) {
-            const carousel = new bootstrap.Carousel(carouselRef.current, {
-                interval: 6000, // Tempo em milissegundos para a troca automática
-                pause: false,   // Não pausar ao passar o mouse
-            });
+        let bootstrap;
+        
+        // Carrega o JavaScript do Bootstrap dinamicamente
+        import('bootstrap/dist/js/bootstrap.bundle.min.js').then((module) => {
+            bootstrap = module.default;
+            if (carouselRef.current) {
+                const carousel = new bootstrap.Carousel(carouselRef.current, {
+                    interval: 6000,
+                    pause: false,
+                });
 
-            return () => {
-                carousel.dispose(); // Limpa o carrossel ao desmontar
-            };
-        }
+                return () => {
+                    carousel.dispose();
+                };
+            }
+        });
     }, []);
 
     return (
@@ -30,11 +35,14 @@ export default function CarouselHead() {
                 data-bs-ride="carousel"
                 ref={carouselRef}
             >
+                {/* Indicadores */}
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+
+                {/* Slides */}
                 <div className="carousel-inner" style={{ height: '700px' }}>
                     <div className="carousel-item active" style={{ height: '700px', position: 'relative' }}>
                         <Image src="/banner1.jpg" className="d-block w-100" alt="First slide" fill style={{ objectFit: 'cover' }} />
@@ -50,7 +58,7 @@ export default function CarouselHead() {
                                     <i className="bi bi-check-circle-fill text-success"></i> <span>Suporte contínuo</span><br />
                                     <i className="bi bi-check-circle-fill text-success"></i> <span>Soluções otimizadas para SEO</span><br />
                                 </div>
-                                <div className='mt-5'>
+                                <div className="mt-5">
                                     <Link href="/contato">
                                         <button className="btn btn-warning mx-2">Fale Conosco</button>
                                     </Link>
@@ -65,22 +73,22 @@ export default function CarouselHead() {
                         <Image src="/banner2.jpg" className="d-block w-100" alt="Second slide" fill style={{ objectFit: 'cover' }} />
                         <div className="carousel-caption d-md-block">
                             <div className={`container mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-                                <p className="text-muted">Dê um passo à frente</p>
-                                <h1 style={{ color: '#FFD700' }}>Presença Online Sólida</h1>
+                                <p className="text-muted">Inovação e Estratégia</p>
+                                <h1 style={{ color: '#FFD700' }}>Sites Sob Medida</h1>
                                 <h3 style={{ color: '#FFFFFF' }}>
-                                    <i>Sites otimizados para impulsionar suas vendas e expandir sua marca.</i>
+                                    <i>Desenvolvimento focado em resultados, trazendo uma experiência única ao usuário.</i>
                                 </h3>
                                 <div className="text-light">
-                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Design atrativo</span><br />
-                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Funcionalidades avançadas</span><br />
-                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Estratégias de marketing integradas</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Designs Modernos</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Funcionalidade Total</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Conversões Aumentadas</span><br />
                                 </div>
-                                <div className='mt-5'>
+                                <div className="mt-5">
                                     <Link href="/contato">
                                         <button className="btn btn-warning mx-2">Fale Conosco</button>
                                     </Link>
                                     <Link href="/servicos">
-                                        <button className="btn btn-secondary mx-2">Explore Nossos Serviços</button>
+                                        <button className="btn btn-secondary mx-2">Veja Nossos Serviços</button>
                                     </Link>
                                 </div>
                             </div>
@@ -90,28 +98,30 @@ export default function CarouselHead() {
                         <Image src="/banner3.jpg" className="d-block w-100" alt="Third slide" fill style={{ objectFit: 'cover' }} />
                         <div className="carousel-caption d-md-block">
                             <div className={`container mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-                                <p className="text-muted">Alavanque seu negócio hoje</p>
-                                <h1 style={{ color: '#FFD700' }}>Vendas pela Web</h1>
+                                <p className="text-muted">Alcance o topo do mercado</p>
+                                <h1 style={{ color: '#FFD700' }}>Desenvolvimento Web Completo</h1>
                                 <h3 style={{ color: '#FFFFFF' }}>
-                                    <i>Soluções digitais que atraem visitantes e os convertem em clientes fiéis.</i>
+                                    <i>Conquiste sua presença digital com soluções completas e funcionais.</i>
                                 </h3>
                                 <div className="text-light">
-                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Aumento de conversões garantido</span><br />
-                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Ferramentas de análise de performance</span><br />
-                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Suporte técnico 24/7</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Estratégias Digitais</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Experiência de Usuário</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Resultados Visíveis</span><br />
                                 </div>
-                                <div className='mt-5'>
+                                <div className="mt-5">
                                     <Link href="/contato">
                                         <button className="btn btn-warning mx-2">Fale Conosco</button>
                                     </Link>
                                     <Link href="/servicos">
-                                        <button className="btn btn-secondary mx-2">Explore Nossos Serviços</button>
+                                        <button className="btn btn-secondary mx-2">Veja Nossos Serviços</button>
                                     </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                {/* Controles laterais */}
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>
