@@ -6,17 +6,27 @@
     height: 100px;
     background-color: white;
     white-space: nowrap;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
 }
 
 .sticky {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 60px; /* Altura reduzida */
     top: 0;
     z-index: 1000;
-    background-color: #ffffffb1; /* Fundo branco com 50% de transparência */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Transição de tamanho do logo */
+.largeLogo {
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.smallLogo {
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
 .menu {
@@ -25,32 +35,31 @@
 }
 
 .transparent-bg {
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com 50% de transparência */
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Ajustes para garantir responsividade */
 .navbar {
-    margin-top: 50px; /* Adiciona 50 pixels de margem superior */
-    flex-wrap: nowrap; /* Impede que os itens do menu quebrem para a linha de baixo */
-    justify-content: flex-end; /* Alinha os itens para a direita */
+    margin-top: 50px;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
 }
 
 .navbar-toggler {
-    border: none; /* Remove a borda do botão toggle */
+    border: none;
 }
 
 .navbar-collapse {
-    transition: max-height 0.3s ease; /* Suaviza a transição ao abrir/fechar o menu */
+    transition: max-height 0.3s ease;
 }
 
 .navbar-nav .nav-link {
-    padding: 10px 15px; /* Espaçamento adequado para os links */
+    padding: 10px 15px;
 }
 
-/* Media Queries para melhor responsividade */
+/* Media Queries */
 @media (max-width: 768px) {
     .headernav {
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        height: auto;
     }
     .menu {
         height: 140px;
@@ -61,10 +70,10 @@
     }
 
     .navbar-nav {
-        flex-direction: column; /* Organiza os links em coluna em telas pequenas */
+        flex-direction: column;
     }
 
     .nav-link {
-        text-align: center; /* Centraliza os links em telas pequenas */
+        text-align: center;
     }
 }
