@@ -1,6 +1,5 @@
 import styles from "./page.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Image from "next/image";
 import CarouselHead from "./components/carouselHead/CarouselHead";
 import NavHeader from "./components/navHeader/NavHeader";
 import NavHead from "./components/navHead/NavHead";

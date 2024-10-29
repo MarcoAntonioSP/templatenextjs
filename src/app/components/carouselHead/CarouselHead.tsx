@@ -1,22 +1,24 @@
 "use client";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './corousel.module.css';
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import styles from './corousel.module.css';
 
 export default function CarouselHead() {
     const carouselRef = useRef(null);
 
     useEffect(() => {
         const bootstrap = require('bootstrap/dist/js/bootstrap.bundle.min.js');
-        const carousel = new bootstrap.Carousel(carouselRef.current, {
-            interval: 6000,
-            pause: false,
-        });
+        if (carouselRef.current) {
+            const carousel = new bootstrap.Carousel(carouselRef.current, {
+                interval: 6000, // Tempo em milissegundos para a troca automática
+                pause: false,   // Não pausar ao passar o mouse
+            });
 
-        return () => {
-            carousel.dispose();
-        };
+            return () => {
+                carousel.dispose(); // Limpa o carrossel ao desmontar
+            };
+        }
     }, []);
 
     return (
@@ -26,7 +28,6 @@ export default function CarouselHead() {
                 className="carousel slide"
                 data-bs-ride="carousel"
                 ref={carouselRef}
-                style={{ height: '700px' }}
             >
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -37,26 +38,24 @@ export default function CarouselHead() {
                     <div className="carousel-item active" style={{ height: '700px', position: 'relative' }}>
                         <img src="/banner1.jpg" className="d-block w-100" alt="First slide" style={{ height: '700px', objectFit: 'cover' }} />
                         <div className="carousel-caption d-md-block">
-                            <div className="container mt-5">
-                                <div className={`text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-                                    <p className="text-muted">Transforme seu sonho digital</p>
-                                    <h1 style={{ color: '#FFD700' }}>Sites que Vendem</h1>
-                                    <h3 style={{ color: '#FFFFFF' }}>
-                                        <i>Projetados para maximizar suas vendas com design responsivo e funcionalidades intuitivas.</i>
-                                    </h3>
-                                    <div className="text-light">
-                                        <i className="bi bi-check-circle-fill text-success"></i> <span>Experiência personalizada</span><br />
-                                        <i className="bi bi-check-circle-fill text-success"></i> <span>Suporte contínuo</span><br />
-                                        <i className="bi bi-check-circle-fill text-success"></i> <span>Soluções otimizadas para SEO</span><br />
-                                    </div>
-                                    <div className='mt-5'>
-                                        <Link href="/contato">
-                                            <button className="btn btn-warning mx-2">Fale Conosco</button>
-                                        </Link>
-                                        <Link href="/servicos">
-                                            <button className="btn btn-secondary mx-2">Veja Nossos Serviços</button>
-                                        </Link>
-                                    </div>
+                            <div className={`container mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+                                <p className="text-muted">Transforme seu sonho digital</p>
+                                <h1 style={{ color: '#FFD700' }}>Sites que Vendem</h1>
+                                <h3 style={{ color: '#FFFFFF' }}>
+                                    <i>Projetados para maximizar suas vendas com design responsivo e funcionalidades intuitivas.</i>
+                                </h3>
+                                <div className="text-light">
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Experiência personalizada</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Suporte contínuo</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Soluções otimizadas para SEO</span><br />
+                                </div>
+                                <div className='mt-5'>
+                                    <Link href="/contato">
+                                        <button className="btn btn-warning mx-2">Fale Conosco</button>
+                                    </Link>
+                                    <Link href="/servicos">
+                                        <button className="btn btn-secondary mx-2">Veja Nossos Serviços</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -64,26 +63,24 @@ export default function CarouselHead() {
                     <div className="carousel-item" style={{ height: '700px', position: 'relative' }}>
                         <img src="/banner2.jpg" className="d-block w-100" alt="Second slide" style={{ height: '700px', objectFit: 'cover' }} />
                         <div className="carousel-caption d-md-block">
-                            <div className="container mt-5">
-                                <div className={`text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-                                    <p className="text-muted">Dê um passo à frente</p>
-                                    <h1 style={{ color: '#FFD700' }}>Presença Online Sólida</h1>
-                                    <h3 style={{ color: '#FFFFFF' }}>
-                                        <i>Sites otimizados para impulsionar suas vendas e expandir sua marca.</i>
-                                    </h3>
-                                    <div className="text-light">
-                                        <i className="bi bi-check-circle-fill text-success"></i> <span>Design atrativo</span><br />
-                                        <i className="bi bi-check-circle-fill text-success"></i> <span>Funcionalidades avançadas</span><br />
-                                        <i className="bi bi-check-circle-fill text-success"></i> <span>Estratégias de marketing integradas</span><br />
-                                    </div>
-                                    <div className='mt-5'>
-                                        <Link href="/contato">
-                                            <button className="btn btn-warning mx-2">Fale Conosco</button>
-                                        </Link>
-                                        <Link href="/servicos">
-                                            <button className="btn btn-secondary mx-2">Explore Nossos Serviços</button>
-                                        </Link>
-                                    </div>
+                            <div className={`container mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+                                <p className="text-muted">Dê um passo à frente</p>
+                                <h1 style={{ color: '#FFD700' }}>Presença Online Sólida</h1>
+                                <h3 style={{ color: '#FFFFFF' }}>
+                                    <i>Sites otimizados para impulsionar suas vendas e expandir sua marca.</i>
+                                </h3>
+                                <div className="text-light">
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Design atrativo</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Funcionalidades avançadas</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Estratégias de marketing integradas</span><br />
+                                </div>
+                                <div className='mt-5'>
+                                    <Link href="/contato">
+                                        <button className="btn btn-warning mx-2">Fale Conosco</button>
+                                    </Link>
+                                    <Link href="/servicos">
+                                        <button className="btn btn-secondary mx-2">Explore Nossos Serviços</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -91,26 +88,24 @@ export default function CarouselHead() {
                     <div className="carousel-item" style={{ height: '700px', position: 'relative' }}>
                         <img src="/banner3.jpg" className="d-block w-100" alt="Third slide" style={{ height: '700px', objectFit: 'cover' }} />
                         <div className="carousel-caption d-md-block">
-                            <div className="container mt-5">
-                                <div className={`text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-                                    <p className="text-muted">Alavanque seu negócio hoje</p>
-                                    <h1 style={{ color: '#FFD700' }}>Vendas pela Web</h1>
-                                    <h3 style={{ color: '#FFFFFF' }}>
-                                        <i>Soluções digitais que atraem visitantes e os convertem em clientes fiéis.</i>
-                                    </h3>
-                                    <div className="text-light">
-                                        <i className="bi bi-check-circle-fill text-success"></i> <span>Aumento de conversões garantido</span><br />
-                                        <i className="bi bi-check-circle-fill text-success"></i> <span>Ferramentas de análise de performance</span><br />
-                                        <i className="bi bi-check-circle-fill text-success"></i> <span>Suporte técnico 24/7</span><br />
-                                    </div>
-                                    <div className='mt-5'>
-                                        <Link href="/contato">
-                                            <button className="btn btn-warning mx-2">Fale Conosco</button>
-                                        </Link>
-                                        <Link href="/servicos">
-                                            <button className="btn btn-secondary mx-2">Explore Nossos Serviços</button>
-                                        </Link>
-                                    </div>
+                            <div className={`container mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+                                <p className="text-muted">Alavanque seu negócio hoje</p>
+                                <h1 style={{ color: '#FFD700' }}>Vendas pela Web</h1>
+                                <h3 style={{ color: '#FFFFFF' }}>
+                                    <i>Soluções digitais que atraem visitantes e os convertem em clientes fiéis.</i>
+                                </h3>
+                                <div className="text-light">
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Aumento de conversões garantido</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Ferramentas de análise de performance</span><br />
+                                    <i className="bi bi-check-circle-fill text-success"></i> <span>Suporte técnico 24/7</span><br />
+                                </div>
+                                <div className='mt-5'>
+                                    <Link href="/contato">
+                                        <button className="btn btn-warning mx-2">Fale Conosco</button>
+                                    </Link>
+                                    <Link href="/servicos">
+                                        <button className="btn btn-secondary mx-2">Explore Nossos Serviços</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
