@@ -1,9 +1,9 @@
-import Hero from "@/app/components/hero/Hero";
+import Herotwo from "@/app/components/herotwo/Herotwo";
 
 export default function Testes (){
     return (
         <div>
-            <Hero />
+           <Herotwo />
         </div>
     )
 }
