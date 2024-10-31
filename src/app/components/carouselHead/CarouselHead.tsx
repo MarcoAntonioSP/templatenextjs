@@ -48,7 +48,7 @@ export default function CarouselHead() {
                             <Image src="/banner1.jpg" className="d-block w-100" alt="First slide" fill style={{ objectFit: 'cover' }} />
                         </div>
                         <div className="carousel-caption d-md-block">
-                            <div className={`container mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+                            <div className={`container ms-3 mt-5 text-center p-4 border rounded ${styles.aewaew}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                                 <p className="text-muted">Transforme seu sonho digital</p>
                                 <h1 style={{ color: '#FFD700' }}>Sites que Vendem</h1>
                                 <h3 style={{ color: '#FFFFFF' }}>
