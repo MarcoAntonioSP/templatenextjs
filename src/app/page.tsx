@@ -7,6 +7,8 @@ import Section1 from "./components/section1/Section1";
 import Apresentation from "./components/structure/Apresentation";
 import ServiceCard from "./components/servicecard/ServiceCard";
 import Hero from "./components/hero/Hero";
+import Herotwo from "./components/herotwo/Herotwo";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -14,10 +16,10 @@ export default function Home() {
       <NavHead />
       <CarouselHead />
       <Apresentation />
+      <Herotwo />
       <Hero />
       <ServiceCard />
-      <Section1 />
-      <NavHeader />
+      <Footer />
     </div>
   );
 }

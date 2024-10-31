@@ -39,7 +39,6 @@
 }
 
 .navbar {
-    margin-top: 50px;
     flex-wrap: nowrap;
     justify-content: flex-end;
 }
@@ -66,7 +65,7 @@
         margin-top: 30px;
     }
     .sticky {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .navbar-nav {
