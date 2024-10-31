@@ -25,7 +25,7 @@ export default function Herotwo() {
             </Link>
             <div className={styles.herotwotextleft}>
               <h1>
-                <Link href="/aceleracao-digital">Estratégias para Crescimento Digital</Link>
+                <Link href="/aceleracao-digital">Aceleração Digital</Link>
               </h1>
             </div>
           </div>
