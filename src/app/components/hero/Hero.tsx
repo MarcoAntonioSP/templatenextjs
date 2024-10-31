@@ -11,24 +11,27 @@ export default function Hero() {
   useEffect(() => {
     const cube = cubeRef.current;
     const hero = heroRef.current;
-    let posY = Math.random() * (hero.clientHeight - 100); // Posição inicial aleatória dentro da hero
-    const speed = 1; // Velocidade do cubo, declarada como const pois não muda
-    let direction = 1; // Direção do movimento (1 = para baixo, -1 = para cima)
 
-    const animateCube = () => {
-      // Atualiza a posição do cubo
-      posY += speed * direction;
+    if (hero) { // Verifica se hero não é null
+      let posY = Math.random() * (hero.clientHeight - 100); // Posição inicial aleatória dentro da hero
+      const speed = 1; // Velocidade do cubo, declarada como const pois não muda
+      let direction = 1; // Direção do movimento (1 = para baixo, -1 = para cima)
 
-      // Verifica se o cubo atingiu as bordas da sectionhero
-      if (posY + cube.offsetHeight > hero.clientHeight || posY < 0) {
-        direction *= -1; // Inverte a direção
-      }
+      const animateCube = () => {
+        // Atualiza a posição do cubo
+        posY += speed * direction;
 
-      cube.style.transform = `translateY(${posY}px)`; // Move o cubo apenas no eixo Y
-      requestAnimationFrame(animateCube);
-    };
+        // Verifica se o cubo atingiu as bordas da sectionhero
+        if (posY + cube.offsetHeight > hero.clientHeight || posY < 0) {
+          direction *= -1; // Inverte a direção
+        }
 
-    animateCube();
+        cube.style.transform = `translateY(${posY}px)`; // Move o cubo apenas no eixo Y
+        requestAnimationFrame(animateCube);
+      };
+
+      animateCube();
+    }
   }, []);
 
   return (
