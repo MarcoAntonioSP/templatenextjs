@@ -12,7 +12,7 @@ export default function Hero() {
     const cube = cubeRef.current;
     const hero = heroRef.current;
     let posY = Math.random() * (hero.clientHeight - 100); // Posição inicial aleatória dentro da hero
-    let speed = 1; // Velocidade do cubo
+    const speed = 1; // Velocidade do cubo, declarada como const pois não muda
     let direction = 1; // Direção do movimento (1 = para baixo, -1 = para cima)
 
     const animateCube = () => {
@@ -49,16 +49,16 @@ export default function Hero() {
             Seja visto. Seja lembrado. Escolha a transformação digital que fará sua empresa crescer. Entre em contato agora e descubra o futuro do seu negócio!
           </p>
           <div className={styles.buttonsContainer}>
-          <Link href="/cubo" className={styles.cubeLink}> {/* Link para a página desejada */}
-        <div ref={cubeRef} className={styles.cube}>
-          <div className={`${styles["cube-face"]} ${styles["cube-face--front"]}`}>A</div>
-          <div className={`${styles["cube-face"]} ${styles["cube-face--back"]}`}>D</div>
-          <div className={`${styles["cube-face"]} ${styles["cube-face--left"]}`}>A</div>
-          <div className={`${styles["cube-face"]} ${styles["cube-face--right"]}`}>D</div>
-          <div className={`${styles["cube-face"]} ${styles["cube-face--top"]}`}>A</div>
-          <div className={`${styles["cube-face"]} ${styles["cube-face--bottom"]}`}>D</div>
-        </div>
-      </Link>
+            <Link href="/cubo" className={styles.cubeLink}>
+              <div ref={cubeRef} className={styles.cube}>
+                <div className={`${styles["cube-face"]} ${styles["cube-face--front"]}`}>A</div>
+                <div className={`${styles["cube-face"]} ${styles["cube-face--back"]}`}>D</div>
+                <div className={`${styles["cube-face"]} ${styles["cube-face--left"]}`}>A</div>
+                <div className={`${styles["cube-face"]} ${styles["cube-face--right"]}`}>D</div>
+                <div className={`${styles["cube-face"]} ${styles["cube-face--top"]}`}>A</div>
+                <div className={`${styles["cube-face"]} ${styles["cube-face--bottom"]}`}>D</div>
+              </div>
+            </Link>
           </div>
         </div>
         <div className={`col-md-6 ${styles.imagemhero}`}>
