@@ -28,6 +28,7 @@ export default function Apresentation() {
             <button className="btn btn-primary btn-lg mt-3">Fale Conosco</button>
           </Link>
         </div>
+  
         <div className="col-md-3 d-none d-md-block text-center">
           <Image 
             src="/section1.jpg" // substitua pelo caminho da sua imagem

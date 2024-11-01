@@ -1,5 +1,7 @@
 .apstructurest {
-  background-color: #f4f4f4;
+  background-image: url('../../../../public/banner2.jpg');
+  background-size: cover;
+  color: white;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   opacity: 0;
