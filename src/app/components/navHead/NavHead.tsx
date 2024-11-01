@@ -49,8 +49,9 @@ export default function NavHead() {
           <div className="navbar-nav">
             <Link className="nav-link" href="#">Quem Somos</Link>
             <Link className="nav-link" href="#">Serviços</Link>
-            <Link className="nav-link" href="#">Contato</Link>
+            <Link className="nav-link" href="#">Preços</Link>
             <Link className="nav-link" href="#">Blog</Link>
+            <Link className="nav-link" href="#">Contato</Link>
           </div>
         </div>
       </nav>

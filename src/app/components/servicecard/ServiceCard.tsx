@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function ServiceCard() {
-  const { ref, inView } = useInView({ threshold: 0.3 });
+  const { ref, inView } = useInView({ threshold: 0.1 });
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {

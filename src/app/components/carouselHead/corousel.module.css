@@ -1,19 +1,19 @@
-.aewaew {
+.textcaroucel {
+    text-align: center;
     position: relative;
     top: -25px;
-    left: -20%;
-    margin-left: 50px;
+    left: 10%;
     color: white;
     width: 70%;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.5); /* Mudança para um fundo mais escuro */
+    height: auto;
     border-radius: 15px;
-    text-shadow: 2px 3px 8px black;
+    text-shadow: 2px 4px 6px #000000;
 }
 
 @media (max-width: 600px) {
-    .aewaew {
-        width: 130%;
-        margin-left: -1.5%;
+    .textcaroucel {
+        width: 120%;
+        left: -12%;
+        height: 400px;
     }
 }
