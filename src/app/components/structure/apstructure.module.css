@@ -5,14 +5,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 550px;
+  height: 570px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   width: 100%;
   position: relative;
-  /* Necessário para que o posicionamento absoluto da imagem funcione */
-  animation: fadeInUp 1.5s ease-out;
-  background-image: url('../../../../public/banner3.jpg');
 }
-
 
 /* Animação de entrada */
 @keyframes fadeInUp {
@@ -29,20 +26,20 @@
 
 /* Estilo para o título */
 .title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  text-shadow: 2px 4px 6px #000000;
+  font-size: 2.5rem; /* Tamanho do texto do título */
+  font-weight: bold; /* Negrito para o título */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+  color: #f5f5f5; /* Azul Marinho para o título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para melhor legibilidade */
 }
 
 /* Estilo para a descrição */
 .description {
-  font-size: 1.4rem;
-  line-height: 2;
-  color: #f6f6f6;
-  text-shadow: 2px 4px 6px #000000;
-  /* Altere a cor conforme necessário */
+  font-size: 1.4rem; /* Tamanho do texto da descrição */
+  line-height: 2; /* Espaçamento entre linhas */
+  color: #F7F6F2; /* Branco Pérola para a descrição */
+  margin-bottom: 2rem; /* Espaço abaixo da descrição */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para melhor legibilidade */
 }
 
 /* Estilo da imagem */
@@ -50,4 +47,20 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+/* Estilo para texto destacado */
+.highlight {
+  color: #D4AF37; /* Dourado para o texto destacado */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo do botão */
+.btn-primary {
+  background-color: #D4AF37; /* Dourado para o botão */
+  border: none; /* Remove a borda do botão */
+}
+
+.btn-primary:hover {
+  background-color: #800020; /* Bordô Profundo no hover do botão */
 }

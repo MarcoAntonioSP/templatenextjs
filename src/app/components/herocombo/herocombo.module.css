@@ -6,10 +6,12 @@
     justify-items: center;
     gap: 10px;
     height: auto;
-    color: rgb(0, 0, 0);
-    background-color: white;
+    color: #2F2F2F; /* Cinza Escuro para o texto principal */
+    background-color: #F7F6F2; /* Branco Pérola para o fundo */
     padding-top: 50px;
+    margin-bottom: 20px;
 }
+
 .herocombotextleft {
     padding: 15px;
 }
@@ -25,32 +27,33 @@
     margin: 0px;
 }
 
-.herolist li{
-    background-color: blue;
+.herolist li {
+    background-color: #1B263B; /* Azul Marinho */
     height: auto;
     width: 100%;
     margin: 10px;
     border-radius: 5px;
     text-align: center;
-    color: white;
+    color: #FFFFFF; /* Branco para o texto dos itens da lista */
     font-weight: 500;
     box-shadow: 1px 1px 2px 2px #00000039;
 }
 
-.heroimg{
+.heroimg {
     height: 550px;
     width: 80%;
 }
 
-.heroimg Img {
+.heroimg img {
     box-shadow: 1px 1px 2px 2px #0000002a;
 }
-.herocomboimglist{
+
+.herocomboimglist {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3px;
-    color: #fff;
+    color: #D4AF37; /* Dourado para o texto dentro da lista de imagens */
 }
 
 .image {
@@ -62,27 +65,51 @@
     display: flex;
     justify-content: center;
 }
+
+.btn-warning {
+    background-color: #800020; /* Bordô Profundo para o botão */
+    color: #FFFFFF; /* Branco para o texto do botão */
+}
+
 @media (max-width: 700px) {
     .herocombo {
         grid-template-columns: 2fr; 
+        margin-bottom: -150px;
     }
-    .heroimg{
+    
+    .heroimg {
         height: 600px;
         width: 80%;
         margin-left: 0%;
         padding: 0px;
     }
-.herolist{
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+
+    .herolist {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .herolist li {
+        background-color: #1B263B; /* Azul Marinho */
+        height: auto;
+        width: 80%;
+        margin: 10px;
+        margin-left: -8%;
+    }
+    
 }
-.herolist li{
-    background-color: blue;
-    height: auto;
-    width: 80%;
-    margin: 10px;
-    margin-left: -8%;
+
+.highlight {
+    color: #D4AF37; /* Dourado */
 }
+
+.customButton {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.customButton:hover {
+    background-color: #f0ad4e; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento de tamanho */
 }
