@@ -1,9 +1,10 @@
-import Herotwo from "@/app/components/herotwo/Herotwo";
+import Herocombo from "@/app/components/herocombo/Herocombo";
+
 
 export default function Testes (){
     return (
         <div>
-           <Herotwo />
+           <Herocombo />
         </div>
     )
 }

@@ -6,10 +6,13 @@
     display: grid;
     grid-template-rows: auto 1fr;
     align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.483);
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.37);
     margin-top: 70px;
 }
 
+.herocontainer {
+    color: #000000;
+}
 .herotwo {
     height: auto;
     width: 100%;
@@ -40,6 +43,7 @@
 .herotwotextleft h1 {
     font-size: 70px;
     margin-top: 3%;
+    text-shadow: 2px 2px 5px #000000c6;
 }
 
 .herotwotextbottom {
@@ -56,7 +60,9 @@
 
 .herotwotextbottom p {
     font-size: 20px;
-    color: white;
+    color: #278ece;
+    text-shadow: 2px 2px 12px #000000c6;   
+    font-weight: 500; 
 }
 
 .herotworigth {
@@ -65,7 +71,7 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
-    color: #fff;
+    color: #341c1c;
     height: auto;
     text-align: left;
 }

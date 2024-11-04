@@ -1,0 +1,88 @@
+.herocombo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    height: auto;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding-top: 50px;
+}
+.herocombotextleft {
+    padding: 15px;
+}
+
+.herolist {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin: 0px;
+}
+
+.herolist li{
+    background-color: blue;
+    height: auto;
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    box-shadow: 1px 1px 2px 2px #00000039;
+}
+
+.heroimg{
+    height: 550px;
+    width: 80%;
+}
+
+.heroimg Img {
+    box-shadow: 1px 1px 2px 2px #0000002a;
+}
+.herocomboimglist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    color: #fff;
+}
+
+.image {
+    width: 110%;
+    object-fit: cover;
+}
+
+.herocombolinkbottom {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 700px) {
+    .herocombo {
+        grid-template-columns: 2fr; 
+    }
+    .heroimg{
+        height: 600px;
+        width: 80%;
+        margin-left: 0%;
+        padding: 0px;
+    }
+.herolist{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.herolist li{
+    background-color: blue;
+    height: auto;
+    width: 80%;
+    margin: 10px;
+    margin-left: -8%;
+}
+}

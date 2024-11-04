@@ -5,7 +5,7 @@ import styles from "./herotwo.module.css";
 export default function Herotwo() {
   return (
     <div className={styles.herocontainer}>
-      <div style={{ textAlign: "center", color: "white" }}>
+      <div style={{ textAlign: "center" }}>
         <h1>
           <Link href="/presenca-digital">Impulsione Seu Negócio com a Aceleração Digital</Link>
         </h1>

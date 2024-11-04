@@ -1,71 +1,53 @@
+/* Estilo principal da estrutura */
 .apstructurest {
-  background-image: url('../../../../public/banner2.jpg');
+  animation: fadeInUp 1.5s ease-out;
+  background-image: url('../../../../public/banner3.jpg');
   background-size: cover;
-  color: white;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transition: opacity 1.5s ease-out;
-  margin: 20px;
-  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 550px;
+  width: 100%;
+  position: relative;
+  /* Necessário para que o posicionamento absoluto da imagem funcione */
+  animation: fadeInUp 1.5s ease-out;
+  background-image: url('../../../../public/banner3.jpg');
 }
 
-.visible {
-  opacity: 1;
-}
 
-.imgleft {
-  border-radius: 15px;
-  width: 500px;
-}
-
-.title {
-  font-size: 48px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  margin-bottom: 20px;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease-out forwards;
-  animation-delay: 0.8s;
-}
-
-.description {
-  font-size: 18px;
-  line-height: 1.8;
-  max-width: 900px;
-  margin: 0 auto;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease-out forwards;
-  animation-delay: 1s;
-}
-
+/* Animação de entrada */
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .apstructurest {
-    padding: 30px 15px;
-  }
+/* Estilo para o título */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 4px 6px #000000;
+}
 
-  .title {
-    font-size: 32px;
-    margin-bottom: 15px;
-  }
+/* Estilo para a descrição */
+.description {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #f6f6f6;
+  text-shadow: 2px 4px 6px #000000;
+  /* Altere a cor conforme necessário */
+}
 
-  .description {
-    font-size: 16px;
-  }
-
-  .imgleft {
-    display: none; /* Imagem ficará invisível em dispositivos móveis */
-  }
+/* Estilo da imagem */
+.imgleft {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

@@ -47,6 +47,7 @@ export default function NavHead() {
         </div>
         <div className={`collapse navbar-collapse ${styles.menu}`} id="navbarNavAltMarkup">
           <div className="navbar-nav">
+          <Link className="nav-link" href="#">Home</Link>
             <Link className="nav-link" href="#">Quem Somos</Link>
             <Link className="nav-link" href="#">Serviços</Link>
             <Link className="nav-link" href="#">Preços</Link>
