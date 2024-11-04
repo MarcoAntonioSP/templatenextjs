@@ -1,0 +1,89 @@
+.container {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px;
+    text-align: center; /* Alinha texto ao centro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background-color: #0056b3;
+    padding: 10px;
+}
+
+.title {
+    font-size: 2.8rem; /* Tamanho do título */
+    color: #FFD700; /* Dourado */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.subtitle {
+    font-size: 1.3rem; /* Tamanho do subtítulo */
+    color: #fafafa; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
+}
+.herohero {
+    display: flex;
+}
+.textContainer {
+    max-width: 500px; /* Largura máxima para o texto */
+}
+
+.textBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Espaçamento entre os blocos de texto */
+    transition: background-color 0.3s, transform 0.3s; /* Transições para hover */
+    padding: 15px; /* Padding interno */
+    border-radius: 8px; /* Arredondamento dos cantos */
+    background-color: rgba(255, 215, 0, 0.1); /* Fundo levemente dourado */
+    font-weight: 500;
+}
+
+.textBlock:hover {
+    background-color: #f0f8ff; /* Azul claro ao passar o mouse */
+    transform: scale(1.02); /* Efeito de aumento no hover */
+}
+
+.icon {
+    color: #FFD700; /* Dourado */
+    font-size: 7.8rem; /* Tamanho do ícone */
+    margin-right: 15px; /* Espaçamento entre ícone e texto */
+}
+
+.imageContainer {
+    width: 80%; /* Largura total para imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.image {
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo do botão */
+.button {
+    margin-top: 20px; /* Espaçamento acima do botão */
+    background-color: #007BFF; /* Azul do Bootstrap */
+    border: none; /* Remove a borda padrão */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de transição */
+    color: white; /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno do botão */
+    font-size: 1.2rem; /* Tamanho da fonte do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+    transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+/* Consultas de mídia para telas maiores */
+@media (max-width: 768px) {
+    .textContainer {
+        margin-right: 20px; /* Espaço entre o texto e a imagem */
+    }
+    .image {
+        margin-left: 14%;
+    }
+    .container {
+        color:white;
+    }
+}

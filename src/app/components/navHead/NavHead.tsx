@@ -21,7 +21,7 @@ export default function NavHead() {
 
   return (
     <div className={`${styles.headernav} ${isSticky ? styles.sticky : ''}`}>
-      <nav className={`navbar navbar-expand-lg ${isSticky ? styles.transparentBg : 'bg-body-tertiary'}`}>
+      <nav className={`navbar navbar-expand-lg ${isSticky ? styles.transparentBg : ''}`}>
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <Link className="navbar-brand" href="/">
             <Image
@@ -47,8 +47,8 @@ export default function NavHead() {
         </div>
         <div className={`collapse navbar-collapse ${styles.menu}`} id="navbarNavAltMarkup">
           <div className="navbar-nav">
-          <Link className="nav-link" href="#">Home</Link>
-            <Link className="nav-link" href="#">Quem Somos</Link>
+          <Link className="nav-link" href="/">Home</Link>
+            <Link className="nav-link" href="/pages/quemsomos">Quem Somos</Link>
             <Link className="nav-link" href="#">Serviços</Link>
             <Link className="nav-link" href="#">Preços</Link>
             <Link className="nav-link" href="#">Blog</Link>
