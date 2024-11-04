@@ -17,7 +17,7 @@ export default function Herotwo() {
             <Link href="/aceleracao-digital">
               <Image
                 className={styles.image}
-                src="/section1.jpg" // substitua pelo caminho da sua imagem
+                src="/section1.webp" // substitua pelo caminho da sua imagem
                 alt="Imagem de Apresentação"
                 width={500}
                 height={400}
@@ -63,7 +63,7 @@ export default function Herotwo() {
                 <Link href={item.link}>
                   <Image
                     className={styles.image2}
-                    src="/section1.jpg" // substitua pelo caminho da sua imagem
+                    src="/section1.webp" // substitua pelo caminho da sua imagem
                     alt="Imagem de Apresentação"
                     width={100}
                     height={0}

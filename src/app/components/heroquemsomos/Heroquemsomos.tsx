@@ -35,7 +35,7 @@ export default function Heroquemsomos() {
             </div>
             <div className={styles.imageContainer}>
                 <Image
-                    src="/eu.jpeg" // Substitua pelo caminho da sua imagem
+                    src="/eu.webp" // Substitua pelo caminho da sua imagem
                     alt="Descrição da imagem"
                     layout="responsive" // Torna a imagem responsiva
                     width={300} // Largura da imagem

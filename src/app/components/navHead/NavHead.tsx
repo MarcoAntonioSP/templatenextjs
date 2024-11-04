@@ -25,7 +25,7 @@ export default function NavHead() {
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <Link className="navbar-brand" href="/">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Logo"
               width={isSticky ? 40 : 80} // Define largura para Image
               height={isSticky ? 40 : 80} // Define altura para Image

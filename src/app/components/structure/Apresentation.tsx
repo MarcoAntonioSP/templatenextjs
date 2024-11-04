@@ -17,7 +17,7 @@ export default function Apresentation() {
         </div>
         <div className="col-md-3 d-none d-md-block text-center">
         <Image 
-  src="/empre.png" // substitua pelo caminho da sua imagem
+  src="/empre.webp" // substitua pelo caminho da sua imagem
   alt="Imagem de Apresentação"
   width={500} 
   height={300} 

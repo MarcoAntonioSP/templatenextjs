@@ -62,7 +62,7 @@ export default function CarouselHead() {
             <div
               style={{ position: "relative", height: "100%", width: "100%" }}>
               <Image
-                src="/banner1.jpg"
+                src="/banner1.webp"
                 className="d-block w-100"
                 alt="First slide"
                 fill
@@ -113,7 +113,7 @@ export default function CarouselHead() {
             <div
               style={{ position: "relative", height: "100%", width: "100%" }}>
               <Image
-                src="/banner2.jpg"
+                src="/banner2.webp"
                 className="d-block w-100"
                 alt="Second slide"
                 fill
@@ -163,7 +163,7 @@ export default function CarouselHead() {
             <div
               style={{ position: "relative", height: "100%", width: "100%" }}>
               <Image
-                src="/banner3.jpg"
+                src="/banner3.webp"
                 className="d-block w-100"
                 alt="Third slide"
                 fill

@@ -31,7 +31,7 @@ export default function Herocombo() {
                                 <div className={styles.herocomboimglist}>
                                     <Image
                                         className={styles.image}
-                                        src="/eu.jpeg" // substitua pelo caminho da sua imagem
+                                        src="/eu.webp" // substitua pelo caminho da sua imagem
                                         alt="Imagem de Apresentação"
                                         width={300}
                                         height={200}
@@ -47,7 +47,7 @@ export default function Herocombo() {
                                 <div className={styles.herocomboimglist}>
                                     <Image
                                         className={styles.image}
-                                        src="/eu.jpeg" // substitua pelo caminho da sua imagem
+                                        src="/eu.webp" // substitua pelo caminho da sua imagem
                                         alt="Imagem de Apresentação"
                                         width={300}
                                         height={200}
@@ -63,7 +63,7 @@ export default function Herocombo() {
                                 <div className={styles.herocomboimglist}>
                                     <Image
                                         className={styles.image}
-                                        src="/eu.jpeg" // substitua pelo caminho da sua imagem
+                                        src="/eu.webp" // substitua pelo caminho da sua imagem
                                         alt="Imagem de Apresentação"
                                         width={300}
                                         height={200}
@@ -79,7 +79,7 @@ export default function Herocombo() {
                                 <div className={styles.herocomboimglist}>
                                     <Image
                                         className={styles.image}
-                                        src="/eu.jpeg" // substitua pelo caminho da sua imagem
+                                        src="/eu.webp" // substitua pelo caminho da sua imagem
                                         alt="Imagem de Apresentação"
                                         width={300}
                                         height={200}
@@ -98,7 +98,7 @@ export default function Herocombo() {
             </div>
             <div className={styles.heroimg}>
                 <Image
-                    src="/eu.jpeg" // substitua pelo caminho da sua imagem
+                    src="/eu.webp" // substitua pelo caminho da sua imagem
                     alt="Imagem de Apresentação"
                     width={800}
                     height={400}
