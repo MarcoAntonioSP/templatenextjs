@@ -1,7 +1,7 @@
 .textcaroucel {
     text-align: center;
     position: relative;
-    top: -25px;
+    top: 30px;
     left: 10%;
     color: white;
     width: 70%;
@@ -15,5 +15,14 @@
         width: 120%;
         left: -12%;
         height: 400px;
+        top: -40px;
     }
+    .textes {
+        padding-bottom: 250px;
+    }
+}
+
+.textes {
+    margin-top: -105.5px;
+    height: auto;
 }

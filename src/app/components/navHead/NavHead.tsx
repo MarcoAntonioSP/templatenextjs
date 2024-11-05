@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image'; // Importando o componente Image
-import styles from './navhead.module.css'; // Verifique se o caminho está correto
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./navhead.module.css";
 
 export default function NavHead() {
   const [isSticky, setIsSticky] = useState(false);
@@ -13,49 +13,76 @@ export default function NavHead() {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div className={`${styles.headernav} ${isSticky ? styles.sticky : ''}`}>
-      <nav className={`navbar navbar-expand-lg ${isSticky ? styles.transparentBg : ''}`}>
-        <div className="container-fluid d-flex justify-content-between align-items-center">
-          <Link className="navbar-brand" href="/">
-            <Image
-              src="/logo.webp"
-              alt="Logo"
-              width={isSticky ? 40 : 80} // Define largura para Image
-              height={isSticky ? 40 : 80} // Define altura para Image
-              style={{ marginRight: "50px", transition: 'width 0.3s ease' }}
-              priority // Para carregamento prioritário
-            />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div className={`collapse navbar-collapse ${styles.menu}`} id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-          <Link className="nav-link" href="/">Home</Link>
-            <Link className="nav-link" href="/pages/quemsomos">Quem Somos</Link>
-            <Link className="nav-link" href="#">Serviços</Link>
-            <Link className="nav-link" href="#">Preços</Link>
-            <Link className="nav-link" href="#">Blog</Link>
-            <Link className="nav-link" href="#">Contato</Link>
+    <>
+      {/* Div superior com 15px de altura e cor vermelha */}
+      <div className={`${styles.topBar} ${isSticky ? styles.hideTopBar : ""}`}>
+        <p>
+           Rua Serra de Botucatu, 2404, Tatuapé- São Paulo, SP (11) 9 5451-0976 - (11) 9 3742-1766
+        </p>
+       
+      </div>
+
+      {/* NavBar */}
+      <div
+        className={`${styles.headernav} ${isSticky ? styles.sticky : "bg-transparent"}`}>
+        <nav
+          className={`navbar navbar-expand-lg ${isSticky ? styles.transparentBg : ""}`}>
+          <div className="container-fluid d-flex justify-content-between align-items-center">
+            <Link className="navbar-brand" href="/">
+              <Image
+                src="/logo.png"
+                className={styles.logoteste}
+                alt="Logo"
+                width={isSticky ? 110 : 200}
+                height={isSticky ? 80 : 80}
+                style={{ marginRight: "150px", transition: "width 0.3s ease" }}
+                priority
+              />
+            </Link>
+            <button
+              className="navbar-toggler border"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
           </div>
-        </div>
-      </nav>
-    </div>
+          <div
+            className={`collapse navbar-collapse ${styles.menu}`}
+            id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="/">
+                Home
+              </Link>
+              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="/pages/quemsomos">
+                Quem Somos
+              </Link>
+              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
+                Serviços
+              </Link>
+              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
+                Preços
+              </Link>
+              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
+                Blog
+              </Link>
+              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
+                Contato
+              </Link>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </>
   );
 }

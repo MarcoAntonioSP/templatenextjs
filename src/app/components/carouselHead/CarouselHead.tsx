@@ -27,7 +27,7 @@ export default function CarouselHead() {
   }, []);
 
   return (
-    <div className="container-fluid p-0">
+    <div className={`${styles.textes} container-fluid p-0`}>
       <div
         id="carouselExampleCaptions"
         className="carousel slide"
@@ -55,7 +55,7 @@ export default function CarouselHead() {
         </div>
 
         {/* Slides */}
-        <div className="carousel-inner" style={{ height: "700px" }}>
+        <div className="carousel-inner" >
           <div
             className="carousel-item active"
             style={{ height: "700px", position: "relative" }}>
@@ -105,7 +105,9 @@ export default function CarouselHead() {
                   </Link>
                 </div>
               </div>
+              
             </div>
+
           </div>
           <div
             className="carousel-item"
@@ -157,6 +159,7 @@ export default function CarouselHead() {
               </div>
             </div>
           </div>
+
           <div
             className="carousel-item"
             style={{ height: "700px", position: "relative" }}>
