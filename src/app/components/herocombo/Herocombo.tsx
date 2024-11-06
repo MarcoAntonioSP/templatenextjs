@@ -8,15 +8,13 @@ export default function Herocombo() {
             <div className={styles.herocombotextleft}>
                 <section>
                     <header>
-                        <h1>Olá, seja bem-vindo à Aceleração Web :)</h1>
+                        <h1>Olá, seja bem-vindo à Aceleração Digital!</h1>
+                        <h2>"Seu impulso para o digital."</h2>
                     </header>
                     <br />
                     <article>
                         <p>
-                            Por trás dos <strong className={styles.highlight}>excelentes resultados</strong> de diversas empresas de sucesso em todo
-                            o Brasil, estão as <strong className={styles.highlight}>soluções oferecidas pela Aceleração Digital</strong>. São
-                            negócios de diferentes tamanhos e setores que confiam na Aceleração Digital para compreender
-                            suas demandas e oferecer <em>soluções personalizadas</em>.
+                            Por trás dos <strong className={styles.highlight}>excelentes resultados</strong> de diversas empresas em todo o Brasil, estão as <strong className={styles.highlight}>soluções da Aceleração Digital</strong>. São negócios de todos os tamanhos que confiam em nossa expertise para <em>expandir suas operações online</em> e alcançar resultados impactantes.
                         </p>
                     </article>
                 </section>
@@ -24,15 +22,15 @@ export default function Herocombo() {
                 <div>
                     <ul className={styles.herolist}>
                         <li className={styles.heroitemli}>
-                            <Link href="/link1" className={styles.heroitemLink}>
+                            <Link href="/servicos/criacao-sites" className={styles.heroitemLink}>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit elitelitelit.</p>
+                                    <p>Sites Institucionais, Landing Pages, e E-commerce, com design responsivo e foco em conversão.</p>
                                 </div>
                                 <div className={styles.herocomboimglist}>
                                     <Image
                                         className={styles.image}
-                                        src="/eu.webp" // substitua pelo caminho da sua imagem
-                                        alt="Imagem de Apresentação"
+                                        src="/herotwo1.png"
+                                        alt="Serviço de Criação de Sites"
                                         width={300}
                                         height={200}
                                     />
@@ -40,15 +38,15 @@ export default function Herocombo() {
                             </Link>
                         </li>
                         <li className={styles.heroitemli}>
-                            <Link href="/link2" className={styles.heroitemLink}>
+                            <Link href="/servicos/trafego-pago" className={styles.heroitemLink}>
                                 <div>
-                                    <p>Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci.</p>
+                                    <p>Campanhas de Google e Facebook Ads, com estratégias para atingir o público ideal.</p>
                                 </div>
                                 <div className={styles.herocomboimglist}>
                                     <Image
                                         className={styles.image}
-                                        src="/eu.webp" // substitua pelo caminho da sua imagem
-                                        alt="Imagem de Apresentação"
+                                        src="/herotwo2.png"
+                                        alt="Serviço de Tráfego Pago"
                                         width={300}
                                         height={200}
                                     />
@@ -56,15 +54,15 @@ export default function Herocombo() {
                             </Link>
                         </li>
                         <li className={styles.heroitemli}>
-                            <Link href="/link3" className={styles.heroitemLink}>
+                            <Link href="/servicos/consultoria-marketing" className={styles.heroitemLink}>
                                 <div>
-                                    <p>Quisque consequat eros nec felis ultrices, a cursus nisi consequat.</p>
+                                    <p>Consultoria e planejamento estratégico para campanhas de marketing digital eficazes.</p>
                                 </div>
                                 <div className={styles.herocomboimglist}>
                                     <Image
                                         className={styles.image}
-                                        src="/eu.webp" // substitua pelo caminho da sua imagem
-                                        alt="Imagem de Apresentação"
+                                        src="/herotwo3.png"
+                                        alt="Serviço de Consultoria de Marketing"
                                         width={300}
                                         height={200}
                                     />
@@ -72,15 +70,15 @@ export default function Herocombo() {
                             </Link>
                         </li>
                         <li className={styles.heroitemli}>
-                            <Link href="/link4" className={styles.heroitemLink}>
+                            <Link href="/servicos/suporte-pos-lancamento" className={styles.heroitemLink}>
                                 <div>
-                                    <p>Aliquam erat volutpat. Nulla facilisi. Integer non odio sit amet </p>
+                                    <p>Suporte contínuo e otimização para garantir o melhor desempenho de seu projeto digital.</p>
                                 </div>
                                 <div className={styles.herocomboimglist}>
                                     <Image
                                         className={styles.image}
-                                        src="/eu.webp" // substitua pelo caminho da sua imagem
-                                        alt="Imagem de Apresentação"
+                                        src="/herotwo4.png"
+                                        alt="Suporte Pós-Lançamento"
                                         width={300}
                                         height={200}
                                     />
@@ -91,14 +89,14 @@ export default function Herocombo() {
                 </div>
 
                 <div className={styles.herocombolinkbottom}>
-                    <Link href="/" className={`btn btn-warning px-4 ${styles.customButton}`}>
-                        aqui
+                    <Link href="/consultoria-gratuita" className={`btn btn-warning px-4 ${styles.customButton}`}>
+                        Solicite uma Consultoria Gratuita
                     </Link>
                 </div>
             </div>
             <div className={styles.heroimg}>
                 <Image
-                    src="/eu.webp" // substitua pelo caminho da sua imagem
+                    src="/eu.jpeg"
                     alt="Imagem de Apresentação"
                     width={800}
                     height={400}

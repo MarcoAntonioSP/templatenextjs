@@ -17,7 +17,7 @@ export default function Herotwo() {
             <Link href="/aceleracao-digital">
               <Image
                 className={styles.image}
-                src="/section1.webp" // substitua pelo caminho da sua imagem
+                src="/section1.webp"
                 alt="Imagem de Apresentação"
                 width={500}
                 height={400}
@@ -36,7 +36,7 @@ export default function Herotwo() {
             </h2>
             <p>
               <Link href="/sobre-nos">
-                Na Aceleração Digital, criamos sites que são verdadeiras ferramentas de venda. Nossa missão é elevar sua presença online com sites estrategicamente projetados para converter visitantes em clientes fiéis.
+                Na Aceleração Digital, oferecemos soluções em websites que não apenas atraem visitantes, mas os convertem em clientes fiéis. Com design inovador, otimização para SEO e integração completa com seu branding, nossa missão é potencializar sua presença digital de forma estratégica.
               </Link>
             </p>
           </div>
@@ -44,10 +44,10 @@ export default function Herotwo() {
 
         <div className={styles.herotworigth}>
           {[
-            { text: "Soluções Personalizadas para Alavancar seu Negócio", link: "/solucoes-personalizadas" },
-            { text: "Design Responsivo e Eficiente para Impactar seu Público", link: "/design-responsivo" },
-            { text: "SEO Avança", link: "/seo-avancado" },
-            { text: "Experiência Digital Sob Medida para sua Marca", link: "/experiencia-digital" },
+            { text: "Soluções Personalizadas para Alavancar seu Negócio", link: "/solucoes-personalizadas", description: "Criamos estratégias sob medida para cada cliente, proporcionando crescimento digital e visibilidade." },
+            { text: "Design Responsivo e Eficiente para Impactar seu Público", link: "/design-responsivo", description: "Desenvolvemos sites que oferecem uma experiência intuitiva e fluida em todos os dispositivos." },
+            { text: "SEO Avançado para Posicionar sua Marca", link: "/seo-avancado", description: "Com técnicas de SEO de ponta, garantimos que seu site se destaque nos mecanismos de busca." },
+            { text: "Experiência Digital Sob Medida para sua Marca", link: "/experiencia-digital", description: "Cada detalhe do design é planejado para refletir a identidade e os valores de sua marca." },
           ].map((item, index) => (
             <div key={index} className={styles.herotwotextrigth}>
               <div className={styles.herotworigtharticles}>
@@ -55,15 +55,14 @@ export default function Herotwo() {
                   <h4>
                     <Link href={item.link}>{item.text}</Link>
                   </h4>
-                  <br />
-                  <p>Publicado recentemente</p>
+                  <p>{item.description}</p>
                 </div>
               </div>
               <div className={styles.herotworigtharticlesimg}>
                 <Link href={item.link}>
                   <Image
                     className={styles.image2}
-                    src="/section1.webp" // substitua pelo caminho da sua imagem
+                    src="/section1.webp"
                     alt="Imagem de Apresentação"
                     width={100}
                     height={0}

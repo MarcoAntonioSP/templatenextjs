@@ -6,8 +6,8 @@
     justify-items: center;
     gap: 10px;
     height: auto;
-    color: #2F2F2F; /* Cinza Escuro para o texto principal */
-    background-color: #F7F6F2; /* Branco Pérola para o fundo */
+    color: #1E3A8A; /* Azul Escuro para o texto */
+    background-color: #E5E7EB; /* Cinza Claro para o fundo */
     padding-top: 50px;
     margin-bottom: 20px;
 }
@@ -20,7 +20,6 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    justify-items: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
@@ -28,7 +27,7 @@
 }
 
 .herolist li {
-    background-color: #1B263B; /* Azul Marinho */
+    background-color: #3B82F6; /* Azul Claro */
     height: auto;
     width: 100%;
     margin: 10px;
@@ -53,7 +52,7 @@
     justify-content: center;
     align-items: center;
     padding: 3px;
-    color: #D4AF37; /* Dourado para o texto dentro da lista de imagens */
+    color: #FB923C; /* Laranja Vivo */
 }
 
 .image {
@@ -67,42 +66,38 @@
 }
 
 .btn-warning {
-    background-color: #800020; /* Bordô Profundo para o botão */
+    background-color: #FB923C; /* Laranja Vivo para o botão */
     color: #FFFFFF; /* Branco para o texto do botão */
 }
 
 @media (max-width: 700px) {
     .herocombo {
-        grid-template-columns: 2fr; 
+        grid-template-columns: 1fr; 
         margin-bottom: -150px;
     }
     
     .heroimg {
         height: 600px;
         width: 80%;
-        margin-left: 0%;
-        padding: 0px;
+        margin-left: 0;
+        padding: 0;
     }
 
     .herolist {
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
     }
 
     .herolist li {
-        background-color: #1B263B; /* Azul Marinho */
+        background-color: #3B82F6; /* Azul Claro */
         height: auto;
         width: 80%;
         margin: 10px;
         margin-left: -8%;
     }
-    
 }
 
 .highlight {
-    color: #D4AF37; /* Dourado */
+    color: #FB923C; /* Laranja Vivo */
 }
 
 .customButton {
@@ -110,6 +105,6 @@
 }
 
 .customButton:hover {
-    background-color: #f0ad4e; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Leve aumento de tamanho */
+    background-color: #F59E0B; /* Mais claro ao passar o mouse */
+    transform: scale(1.05);
 }

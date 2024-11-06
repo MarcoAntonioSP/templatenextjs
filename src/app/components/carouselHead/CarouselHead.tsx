@@ -15,7 +15,7 @@ export default function CarouselHead() {
       bootstrap = module.default;
       if (carouselRef.current) {
         const carousel = new bootstrap.Carousel(carouselRef.current, {
-          interval: 6000,
+          interval: 8000,
           pause: false,
         });
 

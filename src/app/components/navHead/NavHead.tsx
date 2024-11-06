@@ -9,7 +9,8 @@ export default function NavHead() {
   const [isSticky, setIsSticky] = useState(false);
 
   const handleScroll = () => {
-    setIsSticky(window.scrollY > 0);
+    // Defina a rolagem para 800px para tornar o menu fixo
+    setIsSticky(window.scrollY > 700);
   };
 
   useEffect(() => {
@@ -26,9 +27,7 @@ export default function NavHead() {
         <p>
            Rua Serra de Botucatu, 2404, Tatuapé- São Paulo, SP (11) 9 5451-0976 - (11) 9 3742-1766
         </p>
-       
       </div>
-
       {/* NavBar */}
       <div
         className={`${styles.headernav} ${isSticky ? styles.sticky : "bg-transparent"}`}>
@@ -71,7 +70,7 @@ export default function NavHead() {
                 Serviços
               </Link>
               <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
-                Preços
+                Nossos Metodos
               </Link>
               <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
                 Blog

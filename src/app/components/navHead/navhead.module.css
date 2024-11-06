@@ -1,25 +1,8 @@
-/* Nova div de informações de contato */
-.topInfo {
-    background-color: red; /* Fundo vermelho */
-    color: white; /* Texto branco */
-    text-align: center;
-    padding: 5px 0;
-    font-size: 14px;
-    height: 15px;
-    transition: opacity 0.3s ease;
-  }
-  
-  /* Classe para esconder a div ao rolar */
-  .hidden {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
+
   .topBar {
     height: 45px;
     padding: 10px;
     background: linear-gradient(to right , #061c40, #003c7a, #08121f);
-
     width: 100%;
   }
   .topBar p {
@@ -32,47 +15,38 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 100px;
-    background-color: rgba(255, 255, 255, 0.785);
     z-index: 10;
     white-space: nowrap;
     transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
   }
   .logoteste {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   
   .sticky {
     position: fixed;
     width: 100%;
-    height: 60px; /* Altura reduzida */
+    height: 55px; /* Altura reduzida */
     top: 0;
     z-index: 1000;
-    background-color: #ffffffb3; /* Fundo branco com transparência */
+    background-color: #ffffff95; /* Fundo branco com transparência */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Transição de tamanho do logo */
-  .largeLogo {
-    transition: width 0.3s ease, height 0.3s ease;
-  }
-  
-  .smallLogo {
-    transition: width 0.3s ease, height 0.3s ease;
   }
   
   /* Estilos do menu de navegação */
   .menu {
     margin-right: 30%;
+    margin-left: 90px;
     display: flex;
     font-weight: 600;
     font-size: large;
     background-color: rgba(255, 255, 255, 0);
     padding: 10px;
     height: auto;
-    text-shadow: 1px 2px 25px rgb(255, 255, 255);
+    text-shadow: 1px 2px 25px rgba(255, 255, 255, 0.484);
   }
   
   /* Cor padrão dos links quando não rolado */
@@ -109,33 +83,42 @@
   @media (max-width: 768px) {
     .headernav {
       height: auto;
-      margin-top: -4px;
+      margin-top: -30px;
     }
-    .menu {
-      height: 258px;
-      margin-top: 10px;
-      font-size: medium;
+    .logoteste {
+      margin-top: 18px;
+      width: 130px;
     }
     .sticky {
-      margin-top: 0px;
+      position: fixed;
+      width: 100%;
+      height: auto; 
+      top: 1;
+      z-index: 1000;
+      background-color: #ffffffc4; /* Fundo branco com transparência */
+      box-shadow: 1px 2px 5px #00000025;
+      transition: background-color 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
     }
-  
     .navbar-nav {
       flex-direction: column;
     }
-  
     .nav-link {
       text-align: center;
     }
-  
     .topBar {
-        height: 39px;
+        height: 60px;
     }
     .whiteText {
       color: black;
       transition: color 0.3s ease;
       background-color: rgb(255, 255, 255);
-      width: 270%;
+      width: 1000%;
+    }
+    .menu {
+      margin-left: 0px;
+      font-weight: 00;
+      font-size: large;
+      padding: 0px;
     }
   }
   

@@ -1,0 +1,130 @@
+.servicesplanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    background-color: #0A0F2C; /* Fundo mais escuro para profissionalismo */
+    padding: 50px 20px;
+    color: #E0E5EB; /* Texto claro */
+}
+
+.servicesplanostitle h1 {
+    font-size: 3rem;
+    color: #1DB5E3; /* Azul vibrante */
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.servicesplanossection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.planCard {
+    background-color: #1A2540;
+    border: 2px solid #1DB5E3;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+    font-size: 3.5rem;
+    color: #FFD700; /* Ícones dourados */
+    margin-bottom: 20px;
+}
+
+.planCard h2 {
+    font-size: 2rem;
+    color: #E0E5EB;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.planCard p {
+    font-size: 1rem;
+    color: #C8D1DD;
+    margin-bottom: 20px;
+}
+
+.serviceList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.serviceList li {
+    font-size: 1.1rem;
+    color: #E0E5EB;
+    margin-bottom: 15px;
+}
+
+.btncustom {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #FFD700;
+    color: #0A0F2C;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btncustom:hover {
+    background-color: #FFB800;
+    transform: scale(1.05);
+}
+
+.priceHighlight {
+    background-color: #1DB5E3;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.checkIcon {
+    color: #1DB5E3;
+    margin-right: 8px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicesplanossection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .planCard {
+      width: 90%;
+      max-width: 350px;
+    }
+  
+    .servicesplanostitle h1 {
+      font-size: 2.5rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    .planCard {
+      width: 100%;
+      max-width: 300px;
+    }
+}
