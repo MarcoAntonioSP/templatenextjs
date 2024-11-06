@@ -9,7 +9,7 @@ export default function Herocombo() {
                 <section>
                     <header>
                         <h1>Olá, seja bem-vindo à Aceleração Digital!</h1>
-                        <h2>"Seu impulso para o digital."</h2>
+                        <h2>&quot;Seu impulso para o digital.&quot;</h2>
                     </header>
                     <br />
                     <article>
