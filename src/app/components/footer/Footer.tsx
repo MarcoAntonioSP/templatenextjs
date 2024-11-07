@@ -1,8 +1,4 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import { BsCheckCircle } from 'react-icons/bs'; // Ícone de check-in
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
+import Image from 'next/image';
 import styles from './footer.module.css';
 
 export default function Footer() {
@@ -14,10 +10,26 @@ export default function Footer() {
         <div className={styles.socialSection}>
           <h3>Redes Sociais</h3>
           <ul>
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='text-primary'  icon={faFacebook} /> </a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon cla className={styles.backgroundinstagram}icon={faInstagram} /> </a></li>
-            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='text-success' icon={faWhatsapp} /> </a></li>
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">  <FontAwesomeIcon className='text-primary' icon={faLinkedin} /> </a></li>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <Image src="/facebookicon.png" alt="Facebook" width={48} height={30} />
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <Image src="/instagranicon.png" alt="Instagram" width={48} height={30} />
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me" target="_blank" rel="noopener noreferrer">
+                <Image src="/whatsapp.png" alt="WhatsApp" width={48} height={30} />
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <Image src="/linkdinicon.png" alt="LinkedIn" width={60} height={30} />
+              </a>
+            </li>
           </ul>
         </div>
         
@@ -25,13 +37,13 @@ export default function Footer() {
         <div className={styles.destaquesSection}>
           <h3>Destaques</h3>
           <ul>
-      <li><a href="/home"><span className={styles.circlecheck}></span> Home</a></li>
-      <li><a href="/sobre"><span className={styles.circlecheck}></span> Sobre Nós</a></li>
-      <li><a href="/produtos"><span className={styles.circlecheck}></span> Produtos</a></li>
-      <li><a href="/blog"><span className={styles.circlecheck}></span> Blog</a></li>
-      <li><a href="/trabalhe-conosco"><span className={styles.circlecheck}></span> Trabalhe Conosco</a></li>
-      <li><a href="/politica-de-privacidade"><span className={styles.circlecheck}></span> Política de Privacidade</a></li>
-    </ul>
+            <li><a href="/home"><span className={styles.circlecheck}></span> Home</a></li>
+            <li><a href="/sobre"><span className={styles.circlecheck}></span> Sobre Nós</a></li>
+            <li><a href="/produtos"><span className={styles.circlecheck}></span> Produtos</a></li>
+            <li><a href="/blog"><span className={styles.circlecheck}></span> Blog</a></li>
+            <li><a href="/trabalhe-conosco"><span className={styles.circlecheck}></span> Trabalhe Conosco</a></li>
+            <li><a href="/politica-de-privacidade"><span className={styles.circlecheck}></span> Política de Privacidade</a></li>
+          </ul>
         </div>
         
         {/* Contato */}

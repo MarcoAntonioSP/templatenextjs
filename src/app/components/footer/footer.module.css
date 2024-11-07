@@ -1,4 +1,4 @@
-.footerContainer {
+  .footerContainer {
   background: linear-gradient(135deg, #1e3c72, #1E3A8A );
   /* Gradiente moderno com azul escuro */
   color: #ffffff;
@@ -31,9 +31,7 @@
 }
 .backgroundinstagram {
   background: radial-gradient(circle at 30% 30%, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
-  border-radius: 12px;
-  
-
+  border-radius: 18px;
 }
 .circlecheck {
   width: 8px;              /* Largura do círculo */
@@ -124,6 +122,20 @@
   /* Tamanho do texto */
   color: #cccccc;
   /* Cor do texto do rodapé */
+}
+.socialSection ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialSection li {
+  width: 50px;
+  height: 50px;
+}
+
+.socialSection li a {
+  display: inline-flex;
 }
 
 @media (max-width: 768px) {
