@@ -96,14 +96,16 @@ export default function Contato() {
             <h3 className={styles.mapTitle}>Localização</h3>
             <div className={styles.mapContainer}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1625566587845!2d-46.632613824668745!3d-23.598502378774395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bcc901d99c1%3A0x10733626611be4dd!2sR.%20Jorge%20Tibiri%C3%A7%C3%A1%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1730984778476!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.083278957953!2d-46.52489182466622!3d-23.539763723168784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c8fa0f05b5f%3A0x3e1a96b5852e7da4!2sRua%20Jorge%20Tibiri%C3%A7%C3%A1%2C%2023%20-%20Ferraz%20de%20Vasconcelos%20-%20SP%2C%2008539-000!5e0!3m2!1spt-BR!2sbr!4v1730984778476!5m2!1spt-BR!2sbr"
                 width="600"
                 height="450"
                 style={{ border: "0" }}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+
+
             </div>
           </div>
         </div>
