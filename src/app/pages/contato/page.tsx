@@ -12,13 +12,26 @@ export default function Contato() {
     mensagem: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.nome || !formData.email || !formData.mensagem) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
     console.log(formData);
+
+    // Here you could implement a real API call or service to handle the form submission
+    // For example, use fetch or axios to send data to a server.
+    // fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) })
+    //   .then(response => response.json())
+    //   .catch(error => console.error('Error:', error));
   };
 
   return (
@@ -26,7 +39,10 @@ export default function Contato() {
       <Navpages />
       <div className={styles.header}>
         <h1 className={styles.title}>Entre em contato</h1>
-        <p className={styles.subtitle}>Estamos aqui para ajudar. Preencha o formulário abaixo ou envie-nos um e-mail.</p>
+        <p className={styles.subtitle}>
+          Estamos aqui para ajudar. Preencha o formulário abaixo ou envie-nos um
+          e-mail.
+        </p>
       </div>
       <div className={styles.content}>
         <div className={styles.formSection}>
@@ -80,12 +96,14 @@ export default function Contato() {
             <h3 className={styles.mapTitle}>Localização</h3>
             <div className={styles.mapContainer}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7852418180746!2d-46.36599392731275!3d-23.540225413971733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7acd3fb00323%3A0xe6788b3ab3414cac!2sR.%20Jorge%20Tibiri%C3%A7%C3%A1%2C%2023%20-%20S%C3%ADtio%20Pared%C3%A3o%2C%20Ferraz%20de%20Vasconcelos%20-%20SP%2C%2008501-230"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1625566587845!2d-46.632613824668745!3d-23.598502378774395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bcc901d99c1%3A0x10733626611be4dd!2sR.%20Jorge%20Tibiri%C3%A7%C3%A1%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1730984778476!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
                 style={{ border: "0" }}
-                allowFullScreen
+                allowfullscreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
