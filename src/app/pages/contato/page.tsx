@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import styles from "./contato.module.css";
 import Navpages from "@/app/components/navpages/Navpages";
