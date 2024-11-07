@@ -66,16 +66,13 @@ export default function NavHead() {
               <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="/pages/quemsomos">
                 Quem Somos
               </Link>
-              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
+              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="/pages/servicos">
                 Serviços
               </Link>
-              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
-                Nossos Metodos
-              </Link>
-              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
+              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="/pages/blog">
                 Blog
               </Link>
-              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="#">
+              <Link className={`${styles.navLink} ${isSticky ? styles.blackText : styles.whiteText}`} href="/pages/contato">
                 Contato
               </Link>
             </div>

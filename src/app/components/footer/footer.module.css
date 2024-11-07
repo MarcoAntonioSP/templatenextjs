@@ -1,105 +1,160 @@
-/* footer.module.css */
-
 .footerContainer {
-    background: linear-gradient(135deg, #157be0, #2c2c2c); /* Gradiente de fundo */
-    color: #ffffff; /* Texto branco */
-    padding: 40px 20px; /* Espaçamento interno */
-    display: flex; /* Flexbox para a estrutura do footer */
-    flex-direction: column; /* Direção vertical */
-    align-items: center; /* Centraliza horizontalmente */
-    width: 100%; /* Ocupa 100% da largura */
-  }
+  background: linear-gradient(135deg, #1e3c72, #1E3A8A );
+  /* Gradiente moderno com azul escuro */
+  color: #ffffff;
+  /* Texto branco */
+  padding: 20px 10px;
+  /* Menos altura, mais compacto */
+  display: flex;
+  /* Flexbox para estrutura do footer */
+  flex-direction: column;
+  /* Direção vertical */
+  /* Centraliza horizontalmente */
+  width: 100%;
+  /* Ocupa 100% da largura */
+}
+
+
+.footerSection {
+  display: flex;
+  /* Flexbox para alinhar as seções */
+  justify-content: space-between;
+  /* Espaçamento uniforme entre as seções */
+  max-width: 1200px;
+  /* Limite de largura */
+  width: 100%;
+  /* O footer ocupa toda a largura */
+  flex-wrap: wrap;
+  /* Permite que as seções quebrem em telas menores */
+  margin: 0 auto;
+  /* Centraliza o conteúdo */
+}
+.backgroundinstagram {
+  background: radial-gradient(circle at 30% 30%, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
+  border-radius: 12px;
   
+
+}
+.circlecheck {
+  width: 8px;              /* Largura do círculo */
+  height: 8px;             /* Altura do círculo */
+  background-color: #ff9900;  /* Cor de fundo do círculo */
+  border-radius: 50%;      /* Faz a div ficar redonda */
+  display: inline-block;   /* Garante que o círculo fique alinhado com o texto */
+  margin-right: 8px;    
+}
+.socialSection,
+.destaquesSection,
+.contatoSection,
+.enderecoSection {
+  flex: 1;
+  /* Cada seção ocupa espaço igual */
+  min-width: 250px;
+  /* Largura mínima para cada seção */
+  margin-right: 20px;
+  /* Espaçamento à direita */
+  margin-bottom: 20px;
+  /* Espaço abaixo para responsividade */
+}
+
+
+
+.contatoSection h3 {
+  margin-left: 20px;
+}
+.socialSection h3,
+.destaquesSection h3,
+.contatoSection h3,
+.enderecoSection h3 {
+  font-size: 1.6rem;
+  /* Tamanho do título */
+  margin-bottom: 15px;
+  /* Espaço abaixo dos títulos */
+  color: #ff9900;
+}
+
+.socialSection ul {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  margin-left: -50px;
+}
+
+.socialSection li {
+  width: 50px;
+}
+
+.list {
+  list-style-type: none;
+  /* Remove os marcadores */
+  padding: 0;
+  /* Remove o preenchimento */
+}
+
+.link {
+  color: #ffffff;
+  /* Cor dos links */
+  text-decoration: none;
+  /* Remove sublinhado */
+  transition: color 0.3s ease;
+  /* Transição suave para hover */
+  display: flex;
+  align-items: center;
+  /* Alinha os ícones com o texto */
+}
+
+.link:hover {
+  color: #ff9900;
+  /* Cor dos links ao passar o mouse */
+}
+
+.icon {
+  margin-right: 10px;
+  /* Espaço entre ícone e texto */
+}
+
+.footerBottom {
+  text-align: center;
+  /* Centraliza o texto do rodapé */
+  margin-top: 20px;
+  /* Espaço acima do texto */
+  font-size: 0.9rem;
+  /* Tamanho do texto */
+  color: #cccccc;
+  /* Cor do texto do rodapé */
+}
+
+@media (max-width: 768px) {
   .footerSection {
-    display: flex; /* Flexbox para alinhar as seções horizontalmente */
-    justify-content: space-between; /* Espaçamento uniforme entre as seções */
-    max-width: 1200px; /* Limite de largura */
-    width: 100%; /* O footer deve ocupar toda a largura */
-    flex-wrap: wrap; /* Permite que as seções quebrem em telas menores */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    flex-direction: column;
+    /* Direção vertical em telas menores */
+    align-items: center;
+    /* Centraliza o conteúdo */
   }
-  
-  .linksSection,
-  .textSection,
-  .ctaSection {
-    flex: 1; /* Cada seção ocupa espaço igual */
-    min-width: 250px; /* Largura mínima para cada seção */
-    margin-right: 20px; /* Espaçamento à direita */
-    margin-bottom: 20px; /* Espaçamento abaixo para responsividade */
+
+  .socialSection,
+  .destaquesSection,
+  .contatoSection,
+  .enderecoSection {
+    margin-right: 0;
+    /* Remove margens à direita */
+    width: 100%;
+    /* Cada seção ocupa 100% da largura */
+    text-align: center;
+    /* Centraliza o texto */
   }
-  
-  .linksSection h3,
-  .textSection h3,
-  .ctaSection h3 {
-    font-size: 1.5rem; /* Tamanho do título */
-    margin-bottom: 15px; /* Espaço abaixo dos títulos */
-    color: #ffcc00; /* Cor do título */
+
+
+  .socialSection ul {
+    width: 90%;
+    margin-left: -0px;
   }
-  
-  .linksSection ul {
-    list-style-type: none; /* Remove marcadores da lista */
-    padding: 0; /* Remove preenchimento padrão */
+
+  .footerContainer h3 {
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
   }
-  
-  .linksSection ul li {
-    margin: 10px 0; /* Espaço entre os itens da lista */
-  }
-  
-  .linksSection ul li a {
-    color: #ffffff; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado */
-    transition: color 0.3s ease; /* Transição suave para hover */
-  }
-  
-  .linksSection ul li a:hover {
-    color: #ff9900; /* Cor dos links ao passar o mouse */
-  }
-  
-  .textSection p {
-    margin: 10px 0; /* Espaçamento entre os parágrafos */
-    line-height: 1.6; /* Melhora a legibilidade */
-  }
-  
-  .ctaSection {
-    text-align: center; /* Centraliza o conteúdo */
-  }
-  
-  .ctaButton {
-    background-color: #ffcc00; /* Cor de fundo dos botões */
-    color: #333; /* Texto dos botões */
-    border: none; /* Remove borda */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    margin: 10px 0; /* Espaço entre os botões */
-    font-size: 1rem; /* Tamanho do texto do botão */
-    cursor: pointer; /* Muda o cursor para indicar clicável */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Transição suave para hover */
-  }
-  
-  .ctaButton:hover {
-    background-color: #ff9900; /* Cor do botão ao passar o mouse */
-  }
-  
-  .footerBottom {
-    text-align: center; /* Centraliza o texto do rodapé */
-    margin-top: 20px; /* Espaço acima do texto do rodapé */
-    font-size: 0.9rem; /* Tamanho do texto do rodapé */
-    color: #cccccc; /* Cor do texto do rodapé */
-  }
-  
-  /* Media Queries para responsividade */
-  @media (max-width: 768px) {
-    .footerSection {
-      flex-direction: column; /* Direção vertical em telas menores */
-      align-items: center; /* Centraliza o conteúdo */
-    }
-  
-    .linksSection,
-    .textSection,
-    .ctaSection {
-      margin-right: 0; /* Remove margens à direita */
-      width: 100%; /* Cada seção ocupa 100% da largura */
-      text-align: center; /* Centraliza o texto */
-    }
-  }
-  
+}

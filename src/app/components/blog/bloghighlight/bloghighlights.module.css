@@ -1,0 +1,108 @@
+.blogHighlight {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.highlightPost {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.highlightPost:hover {
+  transform: scale(1.05);
+}
+
+.highlightText {
+  padding: 40px;
+  text-align: center;
+}
+
+.highlightTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+}
+
+.highlightDescription {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.highlightDate {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.recentPosts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.recentPostsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recentPostItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.recentPostItem:hover {
+  background-color: #f9f9f9;
+}
+
+.recentImage {
+  width: 120px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.recentText {
+  flex: 1;
+}
+
+.recentTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.recentDate {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

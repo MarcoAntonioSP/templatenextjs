@@ -74,7 +74,7 @@ export default function CarouselHead() {
               <div
                 className={`container ms-3 mb-5 text-center p-4   ${styles.textcaroucel}`}>
                 <p>Transforme seu sonho digital</p>
-                <h1 className="display-3" style={{ color: "#FFD700" }}>Sites que Vendem</h1>
+                <h1 className="display-3" style={{ color: "#ffd700" }}>Sites que Vendem</h1>
                 <h3 className="display-7"  style={{ color: "#FFFFFF" }}>
                   <i>
                     Projetados para maximizar suas vendas com design responsivo
@@ -115,7 +115,7 @@ export default function CarouselHead() {
             <div
               style={{ position: "relative", height: "100%", width: "100%" }}>
               <Image
-                src="/banner2.webp"
+                src="/banner2.png"
                 className="d-block w-100"
                 alt="Second slide"
                 fill
@@ -126,7 +126,7 @@ export default function CarouselHead() {
               <div
                 className={`container ms-3 mt-5 mb-5 text-center p-4   ${styles.textcaroucel}`}>
                 <p>Inovação e Estratégia</p>
-                <h1 className="display-3" style={{ color: "#FFD700" }}>Sites Sob Medida para você</h1>
+                <h1 className="display-3" style={{ color: "#ffd700" }}>Sites Sob Medida para você</h1>
                 <h3 className="display-7" style={{ color: "#FFFFFF" }}>
                   <i>
                     Desenvolvimento focado em resultados, trazendo uma
@@ -177,7 +177,7 @@ export default function CarouselHead() {
               <div
                 className={`container ms-3 mb-5 text-center p-4 ${styles.textcaroucel}`}>
                 <p>Alcance o topo do mercado</p>
-                <h1 className="display-3" style={{ color: "#FFD700" }}>
+                <h1 className="display-3" style={{ color: "#ffd700 " }}>
                   Desenvolvimento Web Completo
                 </h1>
                 <h3 className="display-7" style={{ color: "#FFFFFF" }}>

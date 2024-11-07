@@ -27,7 +27,7 @@
 }
 
 .herolist li {
-    background-color: #3B82F6; /* Azul Claro */
+    background-color: #1E3A8A ; /* Azul Claro */
     height: auto;
     width: 100%;
     margin: 10px;
@@ -105,6 +105,6 @@
 }
 
 .customButton:hover {
-    background-color: #F59E0B; /* Mais claro ao passar o mouse */
+    background-color: #FB923C ; /* Mais claro ao passar o mouse */
     transform: scale(1.05);
 }

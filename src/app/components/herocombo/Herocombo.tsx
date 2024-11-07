@@ -89,7 +89,7 @@ export default function Herocombo() {
                 </div>
 
                 <div className={styles.herocombolinkbottom}>
-                    <Link href="/consultoria-gratuita" className={`btn btn-warning px-4 ${styles.customButton}`}>
+                    <Link href="/consultoria-gratuita" className={`btn btn-warning px-5 ${styles.customButton}`}>
                         Solicite uma Consultoria Gratuita
                     </Link>
                 </div>
