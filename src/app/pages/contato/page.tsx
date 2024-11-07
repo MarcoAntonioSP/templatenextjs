@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import styles from "./contato.module.css";
 import Navpages from "@/app/components/navpages/Navpages";
@@ -11,13 +10,12 @@ export default function Contato() {
     mensagem: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar os dados do formulário.
     console.log(formData);
   };
 
@@ -25,13 +23,9 @@ export default function Contato() {
     <div className={styles.container}>
       <Navpages />
       <div className={styles.header}>
-        <h1 className={styles.title}>Entre em Contato</h1>
-        <p className={styles.subtitle}>
-          Estamos aqui para ajudar. Preencha o formulário abaixo ou nos envie um
-          e-mail.
-        </p>
+        <h1 className={styles.title}>Entre em contato</h1>
+        <p className={styles.subtitle}>Estamos aqui para ajudar. Preencha o formulário abaixo ou envie-nos um e-mail.</p>
       </div>
-
       <div className={styles.content}>
         <div className={styles.formSection}>
           <h2 className={styles.formTitle}>Envie-nos uma Mensagem</h2>
@@ -64,7 +58,6 @@ export default function Contato() {
             </button>
           </form>
         </div>
-
         <div className={styles.infoSection}>
           <h2 className={styles.infoTitle}>Outras Formas de Contato</h2>
           <div className={styles.contactInfo}>
@@ -81,14 +74,13 @@ export default function Contato() {
               <p>contato@seusite.com</p>
             </div>
           </div>
-
           <div className={styles.mapSection}>
             <h3 className={styles.mapTitle}>Localização</h3>
             <div className={styles.mapContainer}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7852418180746!2d-46.36599392731275!3d-23.540225413971733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7acd3fb00323%3A0xe6788b3ab3414cac!2sR.%20Jorge%20Tibiri%C3%A7%C3%A1%2C%2023%20-%20S%C3%ADtio%20Paredao%2C%20Ferraz%20de%20Vasconcelos%20-%20SP%2C%2008501-230!5e0!3m2!1spt-BR!2sbr!4v1730961139561!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7852418180746!2d-46.36599392731275!3d-23.540225413971733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7acd3fb00323%3A0xe6788b3ab3414cac!2sR.%20Jorge%20Tibiri%C3%A7%C3%A1%2C%2023%20-%20S%C3%ADtio%20Pared%C3%A3o%2C%20Ferraz%20de%20Vasconcelos%20-%20SP%2C%2008501-230"
                 style={{ border: "0" }}
-                allowFullScreen=""
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
