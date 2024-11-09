@@ -22,7 +22,7 @@ export default function ServiceCard() {
         <div className="col-md-4 d-none d-md-block text-center">
           <Image
             className={`${styles.imgleft} img-fluid`}
-            src="/section1.jpg"
+            src="/herotwo2.png"
             alt="Venda de Sites para Advogados"
             width={400}
             height={400}

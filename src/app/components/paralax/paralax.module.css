@@ -1,0 +1,253 @@
+.paralax {
+    background: linear-gradient(
+      45deg,
+      #090909,
+      #423427,
+      #240345,
+      #006734,
+      #007fff,
+      #ff00ff
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    height: 100vh; /* Ajuste de altura para ocupar a tela */
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; /* Centraliza os elementos no eixo principal */
+    padding: 40px;
+    transition: background-position 1s ease;
+    gap: 30px; /* Espaço entre as duas divs */
+  }
+  /* Animação para o gradiente */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Ajustes de tipografia e elementos dentro da seção */
+  .paralax h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    margin: 0;
+  }
+  
+  .paralax p {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Efeito de desfoque sutil no fundo */
+  .paralax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Somente um leve sombreado */
+    z-index: -1;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .paralax:hover::before {
+    background: rgba(0, 0, 0, 0.5); /* Efeito de escurecimento no hover */
+  }
+  
+  
+  .paralaxbackgroundimgleft {
+    width: 30%; /* Ajuste de largura */
+    display: flex;
+    flex-direction: column; /* Organiza a imagem e o botão verticalmente */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Animação de pêndulo */
+  @keyframes pendulum {
+    0% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+  }
+  
+  .image {
+    animation: pendulum 3s ease-in-out infinite;
+    transform-origin: bottom center;
+
+  }
+  .buttonparalax{
+    margin-top: 50px;
+  }
+  /* Lista de vantagens */
+  .listContainer {
+    width: 50%;
+    max-height: 80%; /* Defina a altura máxima da lista */
+    overflow-x: hidden; /* Desativa a rolagem horizontal */
+    overflow-y: auto; /* Ativa a rolagem vertical */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex;
+    flex-wrap: nowrap; /* Mantém a lista na mesma linha */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 30px; /* Espaçamento entre os itens */
+  }
+  
+  .listContainer::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem vertical */
+  }
+  
+  .listContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Cor da barra de rolagem */
+    border-radius: 4px; /* Bordas arredondadas para o controle */
+  }
+  
+  .advantageList {
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column; /* Adiciona flexbox na direção vertical */
+  }
+  
+  .advantageList li {
+    display: flex;
+
+    align-items: center; /* Alinha o ícone e o texto na vertical */
+    font-weight: 400;
+    width: 100%;
+    flex-direction: row; /* Alinha o ícone e o texto na mesma linha */
+    min-width: 250px; /* Largura mínima de cada item */
+    margin-bottom: 15px; /* Espaçamento entre os itens */
+  }
+  
+  /* Adiciona um fundo branco e bordas arredondadas aos ícones */
+  /* Alinha o ícone com fundo branco e bordas arredondadas */
+  /* Ajustando o ícone para garantir que ele apareça corretamente */
+  .icon {
+    background-color: rgba(36, 34, 34, 0.238);
+    border-radius: 50%;
+    color: rgb(198, 198, 3); /* Cor do ícone */
+    padding: 8px; /* Remove o padding que estava forçando o círculo a crescer */
+    margin-right: 15px; /* Espaço entre o ícone e o texto */
+    display: flex; /* Garante que o ícone se comporte como flex */
+    justify-content: center; /* Centraliza o ícone dentro do círculo */
+    align-items: center; /* Alinha verticalmente */
+    width: 30%; /* Tamanho fixo do círculo */
+    height: 44%; /* Tamanho fixo do círculo */
+    z-index: 10; /* Coloca o ícone acima do fundo branco */
+  }
+  .advantageTitle {
+    margin-bottom: 10px;
+  }
+  
+  /* Alinha o ícone com o texto */
+  .advantageText {
+    margin: 0;
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+    text-align: left;
+    max-width: 100%;
+    line-height: 1.4; /* Espaço entre as linhas */
+    padding-left: 10px; /* Espaçamento entre o ícone e o texto */
+    margin-bottom: 20px;
+  }
+
+  
+  @media (max-width: 1024px) {
+    .paralax {
+      padding: 20px; /* Reduz o padding em tablets */
+    }
+  
+    .paralaxbackgroundimgleft {
+      width: 50%; /* Imagem ocupa metade da largura em telas menores */
+      height: auto;
+      background-size: contain; /* Garante que a imagem se ajuste */
+    }
+  
+    .listContainer {
+      width: 100%; /* A lista ocupa toda a largura da tela em tablets */
+      padding: 10px;
+    }
+  
+    .advantageList li {
+      flex-direction: column; /* Alinha os itens na vertical */
+      margin-bottom: 20px; /* Adiciona um espaço maior entre os itens */
+    }
+  
+    .icon {
+      width: 50px; /* Reduz o tamanho do ícone */
+      height: 50px;
+      margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+    }
+  
+    .advantageText {
+      font-size: 0.85rem; /* Diminui o tamanho da fonte para caber melhor na tela */
+    }
+  
+    .advantageTitle {
+      font-size: 1.1rem; /* Ajusta o tamanho do título */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .paralax {
+      flex-direction: column; /* Empilha os itens na versão móvel */
+      height: auto; /* Ajusta a altura da seção */
+      padding: 15px;
+    }
+  
+    .paralaxbackgroundimgleft {
+      width: 80%; /* A imagem ocupa 80% da largura na versão móvel */
+      height: auto;
+    }
+  
+    .listContainer {
+      width: 100%; /* Ocupa toda a largura em dispositivos móveis */
+      padding: 10px;
+      max-height: none; /* Permite que a lista ocupe toda a altura disponível */
+    }
+  
+    .advantageList {
+      flex-direction: column; /* Alinha os itens na vertical */
+      margin: 0;
+    }
+  
+    .advantageList li {
+      flex-direction: column; /* Itens alinhados verticalmente em telas pequenas */
+      text-align: center; /* Centraliza os textos */
+      margin-bottom: 15px; /* Espaçamento maior entre os itens */
+    }
+  
+    .icon {
+      width: 40px; /* Ajuste do tamanho dos ícones */
+      height: 40px;
+      margin-bottom: 10px; /* Espaço adicional entre ícone e texto */
+    }
+  
+    .advantageText {
+      font-size: 0.8rem; /* Reduz o tamanho da fonte para caber melhor em telas pequenas */
+    }
+  
+    .advantageTitle {
+      font-size: 1rem; /* Ajusta o tamanho do título */
+    }
+  }
