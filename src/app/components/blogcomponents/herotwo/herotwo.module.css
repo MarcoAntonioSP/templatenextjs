@@ -9,7 +9,7 @@
     color: #E5E7EB; /* Cinza claro para profissionalismo */
     padding-top: 50px;
     padding: 5px;
-    background-color: #1E3A8A; /* Azul Escuro para fundo */
+    background: linear-gradient(to right, #1E3A8A , #114df3c1 );
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.37);
 }
 

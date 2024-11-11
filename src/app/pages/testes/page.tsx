@@ -1,5 +1,5 @@
 import Footer from "@/app/components/footer/Footer";
-import Herocombo from "@/app/components/herocombo/Herocombo";
+import Herocombo from "@/app/components/index/herocombo/Herocombo";
 import Navpages from "@/app/components/navpages/Navpages";
 import Paralax from "@/app/components/paralax/Paralax";
 
@@ -10,9 +10,7 @@ export default function Testes (){
         <div>
             <Navpages />
             <Herocombo />
-            <Herocombo />
             <Paralax />
-            <Herocombo />
             <Footer />
         </div>
     )

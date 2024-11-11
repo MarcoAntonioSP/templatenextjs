@@ -27,7 +27,7 @@
 }
 
 .herolist li {
-    background-color: #1E3A8A ; /* Azul Claro */
+    background: linear-gradient(135deg, #1E3A8A , #0b4cffda );
     height: auto;
     width: 100%;
     margin: 10px;

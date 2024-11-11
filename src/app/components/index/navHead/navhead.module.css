@@ -2,7 +2,7 @@
   .topBar {
     height: 45px;
     padding: 10px;
-    background: linear-gradient(to right , #061c40, #003c7a, #08121f);
+    background: #1E3A8A;
     width: 100%;
   }
   .topBar p {

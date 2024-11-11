@@ -7,7 +7,12 @@
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+.titlequemsomos h1 {
+    text-align:  center;
+    font-weight: 600;
+    margin-top: 50px;
 
+}
 .textContainer {
     flex: 1; /* O texto ocupa a maior parte do espaço */
     max-width: 500px; /* Largura máxima para o texto */
@@ -20,7 +25,7 @@
 }
 
 .title {
-    color: #FFD700; /* Dourado */
+    color: #ff9900; /* Dourado */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     font-size: 2.5rem; /* Ajuste conforme necessário */
 }

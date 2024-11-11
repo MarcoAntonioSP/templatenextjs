@@ -1,7 +1,7 @@
 /* Estilo principal da estrutura */
 .apstructurest {
   animation: fadeInUp 1.5s ease-out;
-  background-image: url('../../../../public/banner3.webp');
+  background-image: url('../../../../../public/banner3.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

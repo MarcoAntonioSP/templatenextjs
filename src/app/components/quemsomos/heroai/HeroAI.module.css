@@ -1,21 +1,20 @@
 .container {
-    background-color: #ffffff; /* Fundo branco */
     padding: 30px;
     text-align: center; /* Alinha texto ao centro */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    background-color: #0056b3;
+    background: linear-gradient(to right, #1E3A8A , #114df3c1 );
     padding: 10px;
+    width: 100%;
 }
 
 .title {
     font-size: 2.8rem; /* Tamanho do título */
-    color: #FFD700; /* Dourado */
+    color: #FB923C ; /* Dourado */
     margin-bottom: 10px; /* Espaçamento abaixo do título */
 }
 
 .subtitle {
     font-size: 1.3rem; /* Tamanho do subtítulo */
-    color: #fafafa; /* Cor do texto */
+    color: #ffffff; /* Cor do texto */
     margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
 }
 .herohero {
@@ -23,6 +22,11 @@
 }
 .textContainer {
     max-width: 500px; /* Largura máxima para o texto */
+    color: white;
+}
+
+.textContainer:hover {
+    color: rgb(3, 0, 0);
 }
 
 .textBlock {
@@ -32,7 +36,7 @@
     transition: background-color 0.3s, transform 0.3s; /* Transições para hover */
     padding: 15px; /* Padding interno */
     border-radius: 8px; /* Arredondamento dos cantos */
-    background-color: rgba(255, 215, 0, 0.1); /* Fundo levemente dourado */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente dourado */
     font-weight: 500;
 }
 

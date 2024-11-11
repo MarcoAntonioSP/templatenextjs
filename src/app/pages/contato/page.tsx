@@ -24,14 +24,6 @@ export default function Contato() {
       alert("Por favor, preencha todos os campos.");
       return;
     }
-
-    console.log(formData);
-
-    // Here you could implement a real API call or service to handle the form submission
-    // For example, use fetch or axios to send data to a server.
-    // fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) })
-    //   .then(response => response.json())
-    //   .catch(error => console.error('Error:', error));
   };
 
   return (

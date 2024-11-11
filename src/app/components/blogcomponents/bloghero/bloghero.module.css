@@ -11,26 +11,33 @@
     flex: 1 1 60%; /* Ajusta a largura para que ocupe 60% da tela em dispositivos maiores */
     display: flex;
     flex-direction: column; /* Organiza os posts em coluna */
-    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .post {
-    background-color: #333333; /* Cinza Escuro */
+    background: linear-gradient(to right, #1E3A8A , #114df3c1 );
     color: #FFFFFF;
     padding: 1.5rem;
     border-radius: 12px;
     display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.215); /* Adiciona uma sombra suave */
 }
 
 .image {
     position: relative;
-    height: auto;
+    width: 90%;
+    margin-left: 3%;
+    height: 300px;
     border-radius: 12px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .text {
@@ -63,12 +70,18 @@
 }
 
 .advertisement {
-    background-color: #FF9F00; /* Laranja vibrante */
     color: #FFFFFF;
-    padding: 1rem;
+    padding: 5PX;
     text-align: center;
     border-radius: 12px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+}
+.image2 {
+    position: relative;
+    width: 90%;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.104);
 }
 
 .recentPosts ul {
@@ -80,7 +93,7 @@
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    background-color: #333333; /* Cinza Escuro */
+    background: linear-gradient(to right, #1E3A8A , #114df3c1 );
     border-radius: 12px;
     color: #FFFFFF;
     margin-bottom: 1rem;
@@ -147,4 +160,7 @@
     .meta {
         font-size: 0.75rem;
     }
+    .image {
+        width: 100%;
+        margin-left: 0%;}
 }

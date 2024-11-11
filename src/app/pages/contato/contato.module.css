@@ -2,10 +2,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    max-width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box; /* Garantir que padding não quebre layout */
+    gap: 30px;
+    width: 100%;
 }
 
 .header {
@@ -39,7 +37,7 @@
     flex-direction: column;
     gap: 30px;
     width: 100%;
-    max-width: 800px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -152,7 +150,6 @@
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 10px; /* Menor padding em telas pequenas */
     }
 
     .header {

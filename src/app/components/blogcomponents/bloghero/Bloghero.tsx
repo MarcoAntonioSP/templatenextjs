@@ -12,33 +12,8 @@ export default function BlogHero() {
               <Image
                 src="/herotwo2.png" // Substitua pelo caminho da sua imagem
                 alt="Descrição da imagem"
-                width={420} // Largura da imagem
-                height={400} // Altura da imagem
-                className={styles.image}
-              />
-            </a>
-          </div>
-          <div className={styles.text}>
-            <a href="#" className={styles.link}>
-              <h2 className={styles.title}>Título do Post</h2>
-            </a>
-            <p className={styles.description}>
-              Aqui vai uma breve descrição ou introdução do post.
-            </p>
-          </div>
-          <div className={styles.meta}>
-            <span className={styles.date}>Data: 01/11/2024</span>
-            <span className={styles.readTime}>Tempo de leitura: 5 min</span>
-          </div>
-        </div>
-        <div className={styles.post}>
-          <div className={styles.image}>
-            <a href="#" className={styles.link}>
-              <Image
-                src="/robot.webp" // Substitua pelo caminho da sua imagem
-                alt="Descrição da imagem"
-                width={420} // Largura da imagem
-                height={400} // Altura da imagem
+                width={220} // Largura da imagem
+                height={200} // Altura da imagem
                 className={styles.image}
               />
             </a>
@@ -66,7 +41,8 @@ export default function BlogHero() {
               src="/banner2.webp"
               alt="Descrição da imagem"
               width={200}
-              height={60}
+              height={100}
+              className={styles.image2}
             />
           </a>
         </div>
@@ -78,8 +54,8 @@ export default function BlogHero() {
                   <Image
                     src="/robot.webp" // Substitua pelo caminho da sua imagem
                     alt="Descrição da imagem"
-                    width={420} // Largura da imagem
-                    height={400} // Altura da imagem
+                    width={220} // Largura da imagem
+                    height={200} // Altura da imagem
                     className={styles.image}
                   />
                 </a>
@@ -114,7 +90,7 @@ export default function BlogHero() {
               <div className={styles.image}>
                 <a href="#" className={styles.link}>
                   <Image
-                    src="/section.webp" // Substitua pelo caminho da sua imagem
+                    src="/teste.webp" // Substitua pelo caminho da sua imagem
                     alt="Descrição da imagem"
                     width={420} // Largura da imagem
                     height={400} // Altura da imagem

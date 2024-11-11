@@ -2,12 +2,11 @@
     position: relative;
     width: 100%; /* Tamanho do quadrado */
     height: auto; /* Permite que a altura se ajuste automaticamente */
-    margin: auto;
     background-color: #f0f0f0; /* Cor de fundo do quadrado */
     margin-bottom: 20px;
     display: flex; /* Adiciona flexbox */
     align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: space-evenly; /* Centraliza horizontalmente */
     text-align: center; /* Centraliza texto */
 }
 
@@ -55,7 +54,7 @@
     z-index: 1; /* Garante que o conteúdo fique acima dos triângulos */
     display: grid; /* Adiciona grid */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Layout responsivo em mosaico */
-    gap: 20px; /* Espaçamento entre os itens */
+    gap: 30px; /* Espaçamento entre os itens */
     padding: 20px; /* Adiciona padding para espaçamento interno */
 }
 
@@ -82,6 +81,7 @@
     margin: 10px 0; /* Adiciona margem para espaçamento */
     font-size: 20px; /* Aumenta o tamanho da fonte */
     color: #333; /* Cor do título */
+    font-weight: 500;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra do texto */
 }
 
@@ -96,6 +96,10 @@
     color: gold; /* Destaca texto em dourado */
     font-weight: bold; /* Negrito para destaque */
 }
+.text{
+    font-weight: 500; /* Negrito para destaque */
+}
+
 
 @media (max-width: 600px) {
     .container {

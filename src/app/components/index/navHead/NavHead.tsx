@@ -9,8 +9,8 @@ export default function NavHead() {
   const [isSticky, setIsSticky] = useState(false);
 
   const handleScroll = () => {
-    // Defina a rolagem para 800px para tornar o menu fixo
-    setIsSticky(window.scrollY > 700);
+    // Defina a rolagem para 450px para tornar o menu fixo
+    setIsSticky(window.scrollY > 450);
   };
 
   useEffect(() => {

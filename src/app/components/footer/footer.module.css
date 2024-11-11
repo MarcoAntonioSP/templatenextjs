@@ -1,5 +1,5 @@
   .footerContainer {
-  background: linear-gradient(135deg, #1e3c72, #1E3A8A );
+    background: linear-gradient(to right, #1E3A8A , #114df3c1 );
   /* Gradiente moderno com azul escuro */
   color: #ffffff;
   /* Texto branco */
@@ -13,7 +13,12 @@
   width: 100%;
   /* Ocupa 100% da largura */
 }
-
+.footerContainer p {
+  font-weight: 600;
+}
+.destaquesSection a {
+  font-weight: 600;
+}
 
 .footerSection {
   display: flex;
@@ -64,12 +69,14 @@
 .destaquesSection h3,
 .contatoSection h3,
 .enderecoSection h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   /* Tamanho do título */
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   /* Espaço abaixo dos títulos */
   color: #ff9900;
+  font-weight: 700;
 }
+
 
 .socialSection ul {
   display: flex;
@@ -120,8 +127,9 @@
   /* Espaço acima do texto */
   font-size: 0.9rem;
   /* Tamanho do texto */
-  color: #cccccc;
+  color: #ffffff;
   /* Cor do texto do rodapé */
+  font-weight: 500;
 }
 .socialSection ul {
   display: flex;
