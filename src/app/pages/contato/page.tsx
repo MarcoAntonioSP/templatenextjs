@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import styles from "./contato.module.css";
 import Navpages from "@/app/components/navpages/Navpages";
 import Footer from "@/app/components/footer/Footer";
@@ -24,6 +25,31 @@ export default function Contato() {
       alert("Por favor, preencha todos os campos.");
       return;
     }
+
+    emailjs
+      .send(
+        "service_06wu4lc", // Seu Service ID
+        "template_e5n308a", // Seu Template ID
+        {
+          nome: formData.nome,
+          email: formData.email,
+          mensagem: formData.mensagem,
+        },
+        "Blr7jcrTJJTWwAMlZ" // Sua Public Key
+      )
+      .then(
+        (response) => {
+          alert("Mensagem enviada com sucesso!");
+          setFormData({
+            nome: "",
+            email: "",
+            mensagem: "",
+          });
+        },
+        (error) => {
+          alert("Ocorreu um erro. Por favor, tente novamente.");
+        }
+      );
   };
 
   return (
@@ -32,8 +58,7 @@ export default function Contato() {
       <div className={styles.header}>
         <h1 className={styles.title}>Entre em contato</h1>
         <p className={styles.subtitle}>
-          Estamos aqui para ajudar. Preencha o formulário abaixo ou envie-nos um
-          e-mail.
+          Estamos aqui para ajudar. Preencha o formulário abaixo ou envie-nos um e-mail.
         </p>
       </div>
       <div className={styles.content}>

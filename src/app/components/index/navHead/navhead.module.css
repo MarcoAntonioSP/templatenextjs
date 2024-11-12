@@ -46,7 +46,6 @@
     background-color: rgba(255, 255, 255, 0);
     padding: 10px;
     height: auto;
-    text-shadow: 1px 2px 25px rgba(255, 255, 255, 0.484);
   }
   
   /* Cor padrão dos links quando não rolado */
@@ -64,6 +63,7 @@
   /* Estilo dos links de navegação */
   .navLink {
     padding: 10px 15px;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.287);
   }
   
   .navbar {
