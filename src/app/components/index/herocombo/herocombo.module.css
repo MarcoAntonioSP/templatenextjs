@@ -7,9 +7,9 @@
     gap: 10px;
     height: auto;
     color: #1E3A8A; /* Azul Escuro para o texto */
-    background-color: #E5E7EB; /* Cinza Claro para o fundo */
+    background-color: #ffffff; /* Cinza Claro para o fundo */
     padding-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
 }
 
 .herocombotextleft {
@@ -27,7 +27,7 @@
 }
 
 .herolist li {
-    background: linear-gradient(135deg, #1E3A8A , #0b4cffda );
+    background: linear-gradient(135deg, #1E3A8A, #0b4cffda);
     height: auto;
     width: 100%;
     margin: 10px;
@@ -36,15 +36,27 @@
     color: #FFFFFF; /* Branco para o texto dos itens da lista */
     font-weight: 500;
     box-shadow: 1px 1px 2px 2px #00000039;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.herolist li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
 }
 
 .heroimg {
-    height: 550px;
-    width: 80%;
+    height: 450px;
+    width: 70%;
 }
 
 .heroimg img {
     box-shadow: 1px 1px 2px 2px #0000002a;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.heroimg img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
 }
 
 .herocomboimglist {
@@ -58,6 +70,12 @@
 .image {
     width: 110%;
     object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
 }
 
 .herocombolinkbottom {
@@ -70,12 +88,21 @@
     color: #FFFFFF; /* Branco para o texto do botão */
 }
 
+.customButton {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.customButton:hover {
+    background-color: #FFAA5C; /* Mais claro ao passar o mouse */
+    transform: scale(1.05);
+}
+
 @media (max-width: 700px) {
     .herocombo {
         grid-template-columns: 1fr; 
         margin-bottom: -150px;
     }
-    
+
     .heroimg {
         height: 600px;
         width: 80%;
@@ -98,13 +125,4 @@
 
 .highlight {
     color: #FB923C; /* Laranja Vivo */
-}
-
-.customButton {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.customButton:hover {
-    background-color: #FB923C ; /* Mais claro ao passar o mouse */
-    transform: scale(1.05);
 }

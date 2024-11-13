@@ -1,0 +1,146 @@
+/* Paleta de cores */
+:root {
+    --background-color: #002d54;
+    --text-color: #ffffff;
+    --icon-color: #fbd328;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 30px;
+    padding-top: 60px;
+    height: auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .titletop {
+    width: 100%;
+    text-align: center;
+    background-color: #002d54;
+    color: white;
+  }
+  
+  .titletop h1 {
+    padding-top: 40px;
+  }
+  
+  .containerleft,
+  .containerright {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .containerleft p,
+  .containerright p {
+    font-size: 1.3rem;
+    margin-inline: auto;
+    width: min(60ch, 100%);
+  }
+  
+  .image {
+    width: min(60ch, 100%);
+    border: 1px solid var(--text-color);
+    animation: revealimg 1s ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Efeito de hover na imagem */
+  .image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title h2 {
+    margin-top: 20px;
+  }
+  
+  .texttitle {
+    width: min(60ch, 100%);
+    animation: revealimg 1s ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+  }
+  
+  .textanimation,
+  .title.animation {
+    animation: appear 1ms ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+  }
+  
+  .textanimationright,
+  .title.animationright {
+    animation: appearright 1ms ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; /* Ajuste conforme necessário */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Efeito de hover nos títulos */
+  .title:hover h2 {
+    color: var(--icon-color);
+  }
+  
+  .icon {
+    color: var(--icon-color);
+    margin-right: 8px;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateX(-100vw);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes appearright {
+    from {
+      opacity: 0;
+      transform: translateX(200vw);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  
+  @keyframes revealimg {
+    from {
+      opacity: 0;
+      clip-path: inset(45% 20% 45% 20%);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  

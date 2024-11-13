@@ -98,7 +98,7 @@ export default function Herocombo() {
                 <Image
                     src="/eu.jpeg"
                     alt="Imagem de Apresentação"
-                    width={800}
+                    width={700}
                     height={400}
                 />
             </div>
